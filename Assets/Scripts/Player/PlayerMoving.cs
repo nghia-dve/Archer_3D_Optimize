@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMoving : NghiaMonoBehaviour
+public class PlayerMoving : MonoBehaviour
 {
     [SerializeField]
     private float playerMoveSpeed = 3;
@@ -15,17 +15,17 @@ public class PlayerMoving : NghiaMonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 movedirection = InputManager.Instance.Direction;
-        if (movedirection.magnitude <= 0.1f) return;
-        _Moving(movedirection);
+        //Vector3 movedirection = InputManager.Instance.Direction;
+        //if (movedirection.magnitude <= 0.1f) return;
+        //_Moving(movedirection);
     }
-    private void _Moving(Vector3 direction)
+    public void _Moving(GameObject player, Vector3 direction)
     {
-        transform.parent.position += direction * playerMoveSpeed * Time.deltaTime;
+        player.transform.position += direction * playerMoveSpeed * Time.deltaTime;
     }
-    protected override void ResetValue()
-    {
-        base.ResetValue();
-        playerMoveSpeed = 3;
-    }
+    //protected override void ResetValue()
+    //{
+    //    base.ResetValue();
+    //    playerMoveSpeed = 3;
+    //}
 }
