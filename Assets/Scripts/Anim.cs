@@ -30,6 +30,7 @@ public class Anim : MonoBehaviour
             s += newState[i];
         }
         currentState = newState;
+        Debug.Log("currentState" + currentState);
         return currentState;
     }
 }

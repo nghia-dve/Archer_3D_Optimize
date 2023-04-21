@@ -31,7 +31,7 @@ public class InputManager : NghiaMonoBehaviour
     void FixedUpdate()
     {
         direction = _Direction(UIManager.Instance.Joystick.Horizontal, UIManager.Instance.Joystick.Vertical);
-        Debug.Log("direction = " + direction);
+        //Debug.Log("direction = " + direction);
     }
     private Vector3 _Direction(float hozizontal, float vertical)
     {

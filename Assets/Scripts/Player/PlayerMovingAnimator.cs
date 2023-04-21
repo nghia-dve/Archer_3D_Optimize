@@ -29,7 +29,10 @@ public class PlayerMovingAnimator : Anim
         else
             if (speed > 0)
         {
-            playerAnimator.SetTrigger(ChangeCurrentState(animRun));
+            if (ChangeCurrentState(animRun) == animRun)
+            {
+                playerAnimator.SetTrigger(animRun);
+            }
             playerAnimator.SetFloat(animMove, speed);
             moveSpeed = speed;
         }
