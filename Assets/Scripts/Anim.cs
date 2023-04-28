@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Anim : MonoBehaviour
+public abstract class Anim : NghiaMonoBehaviour
 {
     private string currentState;
+    [SerializeField]
+    protected Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -19,18 +21,23 @@ public class Anim : MonoBehaviour
     }
     public string ChangeCurrentState(string newState)
     {
-        if (currentState == newState) return null;
-        string s = "";
-        for (int i = 0; i < newState.Length; i++)
-        {
-            if (newState[i].ToString().Contains(" "))
-            {
-                break;
-            }
-            s += newState[i];
-        }
-        currentState = newState;
         Debug.Log("currentState" + currentState);
+        if (currentState == newState)
+        {
+            currentState = null;
+            return null;
+        }
+        //string s = "";
+        //for (int i = 0; i < newState.Length; i++)
+        //{
+        //    if (newState[i].ToString().Contains(" "))
+        //    {
+        //        break;
+        //    }
+        //    s += newState[i];
+        //}
+        currentState = newState;
+
         return currentState;
     }
 }

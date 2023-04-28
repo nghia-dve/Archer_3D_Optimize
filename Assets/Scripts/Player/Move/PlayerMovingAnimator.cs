@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class PlayerMovingAnimator : Anim
+public class PlayerMovingAnimator : PalyerAnimator
 {
     const string animRun = "Run";
     const string animMove = "MoveSpeed";
     private float moveSpeed = 0;
+    public float MoveSpeed { get { return moveSpeed; } }
     // Start is called before the first frame update
     void Start()
     {
@@ -19,26 +20,26 @@ public class PlayerMovingAnimator : Anim
     {
 
     }
-    public void _MovingAnimator(Animator playerAnimator, float speed)
+    public void _MovingAnimator(float speed)
     {
+        var currentState = ChangeCurrentState(animRun);
         if (speed <= 0 && moveSpeed != 0 && moveSpeed > 0)
         {
             moveSpeed -= Time.deltaTime;
-            playerAnimator.SetFloat(animMove, moveSpeed);
+            animator.SetFloat(animMove, moveSpeed);
         }
         else
             if (speed > 0)
         {
-            if (ChangeCurrentState(animRun) == animRun)
+            if (currentState == animRun)
             {
-                playerAnimator.SetTrigger(animRun);
+                animator.SetTrigger(animRun);
             }
-            playerAnimator.SetFloat(animMove, speed);
+            animator.SetFloat(animMove, speed);
             moveSpeed = speed;
         }
         else
             return;
-
     }
 
 }

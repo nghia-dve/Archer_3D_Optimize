@@ -1,3 +1,4 @@
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,8 +16,6 @@ public class InputManager : NghiaMonoBehaviour
             return instance;
         }
     }
-
-    //public Vector3 Direction => throw new System.NotImplementedException();
 
     private Vector3 direction = Vector3.zero;
     public Vector3 Direction { get { return direction; } }

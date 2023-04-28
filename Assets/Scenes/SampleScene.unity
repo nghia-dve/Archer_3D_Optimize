@@ -224,17 +224,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75741347a3f7a4e4488f6cedb1c86a37, type: 3}
---- !u!114 &56234262 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2826392936937242160, guid: 75741347a3f7a4e4488f6cedb1c86a37, type: 3}
-  m_PrefabInstance: {fileID: 56234261}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &56234263 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2826392937407985117, guid: 75741347a3f7a4e4488f6cedb1c86a37, type: 3}
@@ -589,6 +578,17 @@ Transform:
   m_Father: {fileID: 1906585237}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &422110241 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6122034746085784430, guid: 75741347a3f7a4e4488f6cedb1c86a37, type: 3}
+  m_PrefabInstance: {fileID: 56234261}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 800e59c0088179c40889c346bfe19024, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &661474902
 GameObject:
   m_ObjectHideFlags: 0
@@ -831,7 +831,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   joyStick: {fileID: 311597302}
-  buttonAttack: {fileID: 56234262}
+  buttonNormalAttack: {fileID: 422110241}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
