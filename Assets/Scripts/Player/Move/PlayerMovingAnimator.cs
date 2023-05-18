@@ -9,6 +9,8 @@ public class PlayerMovingAnimator : PalyerAnimator
     const string animMove = "MoveSpeed";
     private float moveSpeed = 0;
     public float MoveSpeed { get { return moveSpeed; } }
+    [SerializeField]
+    private PlayerControl playerControl;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +24,14 @@ public class PlayerMovingAnimator : PalyerAnimator
     }
     public void _MovingAnimator(float speed)
     {
-        var currentState = ChangeCurrentState(animRun);
+        //var currentState =
+        //ChangeCurrentState(animRun);
+        //Debug.Log("currentState" + currentState);
+        if (playerControl.CurrentState != animRun)
+        {
+            animator.SetTrigger(animRun);
+            playerControl.SetCurrentState(animRun);
+        }
         if (speed <= 0 && moveSpeed != 0 && moveSpeed > 0)
         {
             moveSpeed -= Time.deltaTime;
@@ -31,15 +40,16 @@ public class PlayerMovingAnimator : PalyerAnimator
         else
             if (speed > 0)
         {
-            if (currentState == animRun)
-            {
-                animator.SetTrigger(animRun);
-            }
             animator.SetFloat(animMove, speed);
             moveSpeed = speed;
         }
         else
             return;
+    }
+    protected override void LoadComponent()
+    {
+        base.LoadComponent();
+        playerControl = transform.parent.GetComponent<PlayerControl>();
     }
 
 }

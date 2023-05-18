@@ -13,7 +13,7 @@ public abstract class PalyerAnimator : Anim
     // Update is called once per frame
     void Update()
     {
-
+        //Debug.Log("currentState" + currentState);
     }
     protected override void LoadComponent()
     {

@@ -16,6 +16,10 @@ public class PlayerControl : NghiaMonoBehaviour
     [SerializeField]
     private bool isExitState = true;
     public bool IsExitState { get { return isExitState; } }
+
+    [SerializeField]
+    protected string currentState;
+    public string CurrentState { get { return currentState; } }
     // Start is called before the first frame update
     void Start()
     {
@@ -25,13 +29,16 @@ public class PlayerControl : NghiaMonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(currentState);
+        Debug.Log("isExitState" + isExitState);
         Vector3 movedirection = InputManager.Instance.Direction;
         bool isAttack = UIManager.Instance.ButtonNormalAttack.IsAttack;
+        //Debug.Log("isAttack" + isAttack);
         if (isAttack)
         {
             Debug.Log("attack");
             isExitState = false;
-            movedirection = Vector3.zero;
+            //movedirection = Vector3.zero;
             playerAttackSwordAnimator.AnimatorAttack();
             playerChangeSkin.ChangeModelWeapon(playerAttackSwordAnimator.AnimSingleTwohandSwordAttack, 1);
         }
@@ -45,6 +52,11 @@ public class PlayerControl : NghiaMonoBehaviour
             playerMoving._Moving(gameObject, movedirection);
         }
     }
+    public void SetCurrentState(string newCurrentState)
+    {
+        currentState = newCurrentState;
+    }
+    #region reset editor
     protected override void LoadComponent()
     {
         base.LoadComponent();
@@ -53,8 +65,9 @@ public class PlayerControl : NghiaMonoBehaviour
         playerAttackSwordAnimator = transform.Find("PlayerAttackSwordAnimator").GetComponent<PlayerAttackSwordAnimator>();
         playerChangeSkin = transform.Find("PlayerChangeSkin").GetComponent<PlayerChangeSkin>();
     }
+    #endregion
     #region even anim
-    private void State()
+    public void State()
     {
         if (UIManager.Instance.ButtonNormalAttack.IsAttack) return;
         isExitState = true;

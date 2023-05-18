@@ -4,7 +4,6 @@ using UnityEngine;
 
 public abstract class Anim : NghiaMonoBehaviour
 {
-    private string currentState;
     [SerializeField]
     protected Animator animator;
 
@@ -19,25 +18,24 @@ public abstract class Anim : NghiaMonoBehaviour
     {
 
     }
-    public string ChangeCurrentState(string newState)
-    {
-        Debug.Log("currentState" + currentState);
-        if (currentState == newState)
-        {
-            currentState = null;
-            return null;
-        }
-        //string s = "";
-        //for (int i = 0; i < newState.Length; i++)
-        //{
-        //    if (newState[i].ToString().Contains(" "))
-        //    {
-        //        break;
-        //    }
-        //    s += newState[i];
-        //}
-        currentState = newState;
+    //public void ChangeCurrentState(string newState)
+    //{
+    //    currentState = newState;
+    //    //Debug.Log("currentState" + currentState);
+    //    if (currentState == newState)
+    //    {
+    //        currentState = null;
+    //    }
 
-        return currentState;
-    }
+    //    //string s = "";
+    //    //for (int i = 0; i < newState.Length; i++)
+    //    //{
+    //    //    if (newState[i].ToString().Contains(" "))
+    //    //    {
+    //    //        break;
+    //    //    }
+    //    //    s += newState[i];
+    //    //}
+
+    //}
 }

@@ -10609,6 +10609,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerMoveSpeed: 3
   rotationSpeed: 720
+  playerControl: {fileID: 8462270128155354826}
 --- !u!1 &797345425627960848
 GameObject:
   m_ObjectHideFlags: 0
@@ -10927,6 +10928,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!136 &4145031607778264926
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -10993,6 +10995,8 @@ MonoBehaviour:
   playerMovingAnimator: {fileID: 6125287516137548341}
   playerAttackSwordAnimator: {fileID: 37666419339687764}
   playerChangeSkin: {fileID: 8494122604323220043}
+  isExitState: 1
+  currentState: 
 --- !u!1 &2170267683771483735
 GameObject:
   m_ObjectHideFlags: 0
@@ -12643,6 +12647,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 4049052408661136237}
+  playerControl: {fileID: 8462270128155354826}
 --- !u!1 &8014533766340841267
 GameObject:
   m_ObjectHideFlags: 0
@@ -12688,6 +12693,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 4049052408661136237}
+  playerControl: {fileID: 8462270128155354826}
 --- !u!1 &8193598101945593087
 GameObject:
   m_ObjectHideFlags: 0
