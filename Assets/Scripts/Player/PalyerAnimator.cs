@@ -4,20 +4,18 @@ using UnityEngine;
 
 public abstract class PalyerAnimator : Anim
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        //Debug.Log("currentState" + currentState);
-    }
+    [SerializeField]
+    protected PlayerControl playerControl;
+    protected const string animRun = "Run";
+    protected const string animMove = "MoveSpeed";
+    protected const string animSingleTwohandSwordAttack = "Sword_L";
+    public string AnimSingleTwohandSwordAttack { get { return animSingleTwohandSwordAttack; } }
+    #region Reset In Editor
     protected override void LoadComponent()
     {
         base.LoadComponent();
         animator = transform.parent.GetComponent<Animator>();
+        playerControl = transform.parent.GetComponent<PlayerControl>();
     }
+    #endregion
 }

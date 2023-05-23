@@ -2,35 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMoving : NghiaMonoBehaviour
+public class PlayerMoving : Movement
 {
     [SerializeField]
     private float playerMoveSpeed = 3;
-    [SerializeField]
-    private float rotationSpeed = 720;
+    public float PlayerMoveSpeed { get { return playerMoveSpeed; } }
     [SerializeField]
     private PlayerControl playerControl;
-    // Start is called before the first frame update
-    void Start()
-    {
 
-    }
-
-    // Update is called once per frame
     void Update()
     {
-
+        if (playerControl.IsAttack || !playerControl.IsExitState ||
+            playerControl.Moveddirection.magnitude <= 0.1f) return;
+        _Moving(transform.parent.gameObject, playerControl.Moveddirection);
     }
-    public void _Moving(GameObject player, Vector3 direction)
+    private void _Moving(GameObject player, Vector3 direction)
     {
         player.transform.position += direction * playerMoveSpeed * Time.deltaTime;
-        LookAtTaget(direction);
+        LookAtTaget(transform.parent.gameObject, direction);
     }
-    private void LookAtTaget(Vector3 direction)
-    {
-        Quaternion toRatation = Quaternion.LookRotation(direction, Vector3.up);
-        transform.parent.rotation = Quaternion.RotateTowards(transform.parent.rotation, toRatation, rotationSpeed * Time.deltaTime);
-    }
+
     #region reset in editor
     protected override void LoadComponent()
     {

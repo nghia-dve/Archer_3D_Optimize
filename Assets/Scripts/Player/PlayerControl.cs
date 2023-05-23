@@ -7,10 +7,12 @@ public class PlayerControl : NghiaMonoBehaviour
 {
     [SerializeField]
     private PlayerMoving playerMoving;
+    public PlayerMoving PlayerMoving { get { return playerMoving; } }
     [SerializeField]
     private PlayerMovingAnimator playerMovingAnimator;
     [SerializeField]
     private PlayerAttackSwordAnimator playerAttackSwordAnimator;
+    public PlayerAttackSwordAnimator PlayerAttackSwordAnimator { get { return playerAttackSwordAnimator; } }
     [SerializeField]
     private PlayerChangeSkin playerChangeSkin;
     [SerializeField]
@@ -20,6 +22,17 @@ public class PlayerControl : NghiaMonoBehaviour
     [SerializeField]
     protected string currentState;
     public string CurrentState { get { return currentState; } }
+
+    [SerializeField]
+    private Rigidbody rigidbody;
+    public Rigidbody Rigidbody { get { return rigidbody; } }
+
+    private Vector3 moveddirection;
+    public Vector3 Moveddirection { get { return moveddirection; } }
+
+    private bool isAttack;
+    public bool IsAttack { get { return isAttack; } }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,28 +42,11 @@ public class PlayerControl : NghiaMonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(currentState);
-        Debug.Log("isExitState" + isExitState);
-        Vector3 movedirection = InputManager.Instance.Direction;
-        bool isAttack = UIManager.Instance.ButtonNormalAttack.IsAttack;
-        //Debug.Log("isAttack" + isAttack);
-        if (isAttack)
-        {
-            Debug.Log("attack");
-            isExitState = false;
-            //movedirection = Vector3.zero;
-            playerAttackSwordAnimator.AnimatorAttack();
-            playerChangeSkin.ChangeModelWeapon(playerAttackSwordAnimator.AnimSingleTwohandSwordAttack, 1);
-        }
-        else
-        if (isExitState)
-        {
-            Debug.Log("run");
-            playerMovingAnimator._MovingAnimator(movedirection.magnitude);
-            playerChangeSkin.ChangeModelWeapon(playerAttackSwordAnimator.AnimSingleTwohandSwordAttack, 0);
-            if (movedirection.magnitude <= 0.1f) return;
-            playerMoving._Moving(gameObject, movedirection);
-        }
+        moveddirection = InputManager.Instance.Direction;
+        isAttack = UIManager.Instance.ButtonNormalAttack.IsAttack;
+        if (!isAttack) return;
+        isExitState = false;
+
     }
     public void SetCurrentState(string newCurrentState)
     {
@@ -64,6 +60,7 @@ public class PlayerControl : NghiaMonoBehaviour
         playerMovingAnimator = transform.Find("PlayerMovingAnimator").GetComponent<PlayerMovingAnimator>();
         playerAttackSwordAnimator = transform.Find("PlayerAttackSwordAnimator").GetComponent<PlayerAttackSwordAnimator>();
         playerChangeSkin = transform.Find("PlayerChangeSkin").GetComponent<PlayerChangeSkin>();
+        rigidbody = GetComponent<Rigidbody>();
     }
     #endregion
     #region even anim

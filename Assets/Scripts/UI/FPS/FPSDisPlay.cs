@@ -23,7 +23,10 @@ public class FPSDisPlay : NghiaMonoBehaviour
     }
     private void ShowFPSDisPlay()
     {
+#if UNITY_EDITOR
+#elif UNITY_ANDROID
         Application.targetFrameRate = 90;
+#endif
         time += Time.deltaTime;
         frameCount++;
         if (time >= pollingTime)

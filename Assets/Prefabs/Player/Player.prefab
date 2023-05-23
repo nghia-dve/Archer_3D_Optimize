@@ -10607,8 +10607,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06615c1317eb9774fb9aa2c016ff4df5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerMoveSpeed: 3
   rotationSpeed: 720
+  playerMoveSpeed: 3
   playerControl: {fileID: 8462270128155354826}
 --- !u!1 &797345425627960848
 GameObject:
@@ -10881,7 +10881,7 @@ GameObject:
   - component: {fileID: 4145031607778264926}
   - component: {fileID: 7918533930144205722}
   - component: {fileID: 8462270128155354826}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -10974,7 +10974,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 116
@@ -10997,6 +10997,7 @@ MonoBehaviour:
   playerChangeSkin: {fileID: 8494122604323220043}
   isExitState: 1
   currentState: 
+  rigidbody: {fileID: 7918533930144205722}
 --- !u!1 &2170267683771483735
 GameObject:
   m_ObjectHideFlags: 0
@@ -11910,6 +11911,7 @@ MonoBehaviour:
   - {fileID: 326542138567459723}
   - {fileID: 326923974704096391}
   - {fileID: 328456871190868313}
+  playerControl: {fileID: 8462270128155354826}
 --- !u!1 &5248703287169881800
 GameObject:
   m_ObjectHideFlags: 0

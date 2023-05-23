@@ -4,22 +4,13 @@ using UnityEngine;
 
 public class PlayerAttackSwordAnimator : PalyerAnimator
 {
-    private const string animSingleTwohandSwordAttack = "Sword_L";
-    public string AnimSingleTwohandSwordAttack { get { return animSingleTwohandSwordAttack; } }
-    [SerializeField]
-    private PlayerControl playerControl;
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
     void Update()
     {
+        if (!playerControl.IsAttack) return;
+        _AnimatorAttack();
 
     }
-    public void AnimatorAttack()
+    private void _AnimatorAttack()
     {
         //var currentState =
         //ChangeCurrentState(animSingleTwohandSwordAttack);
@@ -29,10 +20,5 @@ public class PlayerAttackSwordAnimator : PalyerAnimator
             playerControl.SetCurrentState(AnimSingleTwohandSwordAttack);
         }
 
-    }
-    protected override void LoadComponent()
-    {
-        base.LoadComponent();
-        playerControl = transform.parent.GetComponent<PlayerControl>();
     }
 }

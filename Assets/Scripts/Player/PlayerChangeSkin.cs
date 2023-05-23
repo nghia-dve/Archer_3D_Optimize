@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerChangeSkin : NghiaMonoBehaviour
@@ -13,18 +14,24 @@ public class PlayerChangeSkin : NghiaMonoBehaviour
     private List<GameObject> listWeapon = new List<GameObject>();
     public List<GameObject> ListWeapon { get { return listWeapon; } }
     #endregion
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
+    [SerializeField]
+    private PlayerControl playerControl;
 
     // Update is called once per frame
     void Update()
     {
+        if (playerControl.IsAttack)
+        {
 
+            ChangeModelWeapon(playerControl.PlayerAttackSwordAnimator.AnimSingleTwohandSwordAttack, 1);
+        }
+        else
+        if (playerControl.IsExitState)
+        {
+            ChangeModelWeapon(playerControl.PlayerAttackSwordAnimator.AnimSingleTwohandSwordAttack, 0);
+        }
     }
-    public void ChangeModelWeapon(string name, int n)
+    private void ChangeModelWeapon(string name, int n)
     {
         for (int i = 0; i < listWeapon.Count; i++)
         {
@@ -36,6 +43,7 @@ public class PlayerChangeSkin : NghiaMonoBehaviour
             }
         }
     }
+    #region Reset In Editor
     protected override void ResetValue()
     {
         base.ResetValue();
@@ -75,4 +83,10 @@ public class PlayerChangeSkin : NghiaMonoBehaviour
             gameObjects.Add(model.transform.Find(modelName + (i + 1)).gameObject);
         }
     }
+    protected override void LoadComponent()
+    {
+        base.LoadComponent();
+        playerControl = transform.parent.GetComponent<PlayerControl>();
+    }
+    #endregion
 }

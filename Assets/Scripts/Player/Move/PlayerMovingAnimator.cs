@@ -5,24 +5,14 @@ using UnityEngine;
 
 public class PlayerMovingAnimator : PalyerAnimator
 {
-    const string animRun = "Run";
-    const string animMove = "MoveSpeed";
     private float moveSpeed = 0;
-    public float MoveSpeed { get { return moveSpeed; } }
-    [SerializeField]
-    private PlayerControl playerControl;
-    // Start is called before the first frame update
-    void Start()
-    {
 
-    }
-
-    // Update is called once per frame
     void Update()
     {
-
+        if (playerControl.IsAttack || !playerControl.IsExitState) return;
+        _MovingAnimator(playerControl.Moveddirection.magnitude);
     }
-    public void _MovingAnimator(float speed)
+    private void _MovingAnimator(float speed)
     {
         //var currentState =
         //ChangeCurrentState(animRun);
@@ -46,10 +36,10 @@ public class PlayerMovingAnimator : PalyerAnimator
         else
             return;
     }
+    #region Reset In Editor
     protected override void LoadComponent()
     {
         base.LoadComponent();
-        playerControl = transform.parent.GetComponent<PlayerControl>();
     }
-
+    #endregion 
 }
