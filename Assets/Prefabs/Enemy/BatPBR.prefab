@@ -1364,11 +1364,11 @@ MonoBehaviour:
   viewAngle: 300
   targetMask:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 64
   obstacleMask:
     serializedVersion: 2
-    m_Bits: 64
-  VisibleTargets: []
+    m_Bits: 128
+  visibleTargets: {fileID: 0}
 --- !u!1 &8109139507480133810
 GameObject:
   m_ObjectHideFlags: 0
@@ -1417,7 +1417,7 @@ Animator:
   m_GameObject: {fileID: 8109139507480133810}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: ad1ae03d33f04374cbfa1a4e4f957090, type: 3}
-  m_Controller: {fileID: 9100000, guid: a8fef1da60a213b40b94fa4724b1dc86, type: 2}
+  m_Controller: {fileID: 9100000, guid: 1c18815ef6ea5ba46af942753991e632, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1488,6 +1488,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ac9931edac2b1247a743f0e6bd3ff3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyFindPlayer: {fileID: 1154497817174651656}
 --- !u!1 &8904197120897062824
 GameObject:
   m_ObjectHideFlags: 0
@@ -1532,4 +1533,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6224db72780b2e41a7569eb8edf277f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 720
+  rotationSpeed: 780
+  enemyControl: {fileID: 1403593178014166773}
+  EnemyMoveSpeed: 2

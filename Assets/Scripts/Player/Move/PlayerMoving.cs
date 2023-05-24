@@ -14,12 +14,12 @@ public class PlayerMoving : Movement
     {
         if (playerControl.IsAttack || !playerControl.IsExitState ||
             playerControl.Moveddirection.magnitude <= 0.1f) return;
-        _Moving(transform.parent.gameObject, playerControl.Moveddirection);
+        _Moving(transform.parent.gameObject, playerControl.Moveddirection, playerMoveSpeed);
     }
-    private void _Moving(GameObject player, Vector3 direction)
+    private void _Moving(GameObject player, Vector3 direction, float speed)
     {
-        player.transform.position += direction * playerMoveSpeed * Time.deltaTime;
-        LookAtTaget(transform.parent.gameObject, direction);
+        player.transform.position += direction * speed * Time.deltaTime;
+        LookAtTaget(player, direction);
     }
 
     #region reset in editor
