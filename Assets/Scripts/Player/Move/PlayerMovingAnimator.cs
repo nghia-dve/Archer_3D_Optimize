@@ -10,9 +10,9 @@ public class PlayerMovingAnimator : PalyerAnimator
     void Update()
     {
         if (playerControl.IsAttack || !playerControl.IsExitState) return;
-        _MovingAnimator(playerControl.Moveddirection.magnitude);
+        MovingAnimator(playerControl.Moveddirection.magnitude);
     }
-    private void _MovingAnimator(float speed)
+    private void MovingAnimator(float speed)
     {
         //var currentState =
         //ChangeCurrentState(animRun);

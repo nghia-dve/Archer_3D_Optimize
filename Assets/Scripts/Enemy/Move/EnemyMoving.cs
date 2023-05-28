@@ -19,10 +19,11 @@ public class EnemyMoving : Movement
     void Update()
     {
         var target = enemyControl.EnemyFindPlayer.VisibleTargets;
-        if (target == null) return;
+        var rangeAttack = enemyControl.RangeAttack;
+        if (target == null || rangeAttack < 0) return;
         var direction = target.transform.position - transform.parent.position;
         LookAtTaget(transform.parent.gameObject, direction);
-        if (direction.magnitude < 2) return;
+        if (direction.magnitude < rangeAttack || enemyControl.IsAttack) return;
         _Moving(transform.parent.gameObject, direction, EnemyMoveSpeed);
     }
 
