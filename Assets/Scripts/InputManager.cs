@@ -29,7 +29,9 @@ public class InputManager : NghiaMonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        direction = _Direction(UIManager.Instance.Joystick.Horizontal, UIManager.Instance.Joystick.Vertical);
+        var horizontal = UIManager.Instance.UIGame.Joystick.Horizontal;
+        var vertical = UIManager.Instance.UIGame.Joystick.Vertical;
+        direction = _Direction(horizontal, vertical);
         //Debug.Log("direction = " + direction);
     }
     private Vector3 _Direction(float hozizontal, float vertical)

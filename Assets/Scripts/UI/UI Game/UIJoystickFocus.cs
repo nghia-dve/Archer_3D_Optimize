@@ -18,9 +18,10 @@ public class UIJoystickFocus : NghiaMonoBehaviour
 #endif
     private void Focus()
     {
-
+        var horizontal = UIManager.Instance.UIGame.Joystick.Horizontal;
+        var vertical = UIManager.Instance.UIGame.Joystick.Vertical;
         int newState = -1;
-        Vector3 vector =new Vector3(UIManager.Instance.Joystick.Horizontal ,0, UIManager.Instance.Joystick.Vertical);
+        Vector3 vector = new Vector3(horizontal, 0, vertical);
         if (vector.x < 0 && vector.z > 0)
         {
             newState = 0;
@@ -37,7 +38,7 @@ public class UIJoystickFocus : NghiaMonoBehaviour
         {
             newState = 2;
         }
-        else if (vector.magnitude < 0.1f||vector.x==0||vector.z==0)
+        else if (vector.magnitude < 0.1f || vector.x == 0 || vector.z == 0)
         {
             newState = -1;
         }

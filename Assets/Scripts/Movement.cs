@@ -9,7 +9,7 @@ public abstract class Movement : NghiaMonoBehaviour
     protected void LookAtTaget(GameObject gameObject, Vector3 direction)
     {
         Quaternion toRatation = Quaternion.LookRotation(direction, Vector3.up);
-        gameObject.transform.rotation = Quaternion.RotateTowards(transform.parent.rotation,
+        gameObject.transform.rotation = Quaternion.RotateTowards(gameObject.transform.rotation,
             toRatation, rotationSpeed * Time.deltaTime);
     }
 }

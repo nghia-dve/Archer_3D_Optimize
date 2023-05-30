@@ -15,18 +15,23 @@ public class UIManager : NghiaMonoBehaviour
             return instance;
         }
     }
-
-    [Header("==MainUI==")]
     [SerializeField]
-    private FloatingJoystick joyStick;
-    [SerializeField]
-    private UIMainButtonNormalAttack buttonNormalAttack;
-    public UIMainButtonNormalAttack ButtonNormalAttack { get { return buttonNormalAttack; } }
-    public FloatingJoystick Joystick { get { return joyStick; } }
+    private UIGame uIGame;
+    public UIGame UIGame { get { return uIGame; } }
 
+
+    [Header("=============")]
+    [SerializeField]
+    private PlayerControl playerControl;
+    public PlayerControl PlayerControl { get { return playerControl; } }
+
+
+    #region Reset In Editor
     protected override void LoadComponent()
     {
-        joyStick = GameObject.Find("Joystick Move").GetComponent<FloatingJoystick>();
-        buttonNormalAttack = GameObject.Find("UIMainButtonNormalAttack").GetComponent<UIMainButtonNormalAttack>();
+        playerControl = GameObject.Find("Player").GetComponent<PlayerControl>();
+        uIGame = GetComponentInChildren<UIGame>();
     }
+
+    #endregion
 }

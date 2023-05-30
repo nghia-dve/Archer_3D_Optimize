@@ -18,6 +18,12 @@ public class EnemyControl : NghiaMonoBehaviour
     public string CurrentState { get { return currentState; } }
     [SerializeField]
     private float timeCheck = 1;
+    [SerializeField]
+    private GameObject model;
+    public GameObject Model { get { return model; } }
+    [SerializeField]
+    Rigidbody rigidbody;
+
     //[SerializeField]
     //private bool isMeleeDamsge;
     //public bool IsMeleeDamsge { get { return isMeleeDamsge; } }
@@ -32,8 +38,17 @@ public class EnemyControl : NghiaMonoBehaviour
     void Update()
     {
         SetAttack();
-        Debug.Log(currentState);
+        //Debug.Log(currentState);
 
+    }
+    private void FixedUpdate()
+    {
+        RemovePhysical();
+    }
+    private void RemovePhysical()
+    {
+        if (rigidbody.velocity == Vector3.zero) return;
+        rigidbody.velocity = Vector3.zero;
     }
 
     private void SetAttack()
@@ -57,12 +72,22 @@ public class EnemyControl : NghiaMonoBehaviour
     {
         currentState = newCurrentState;
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.name == "Sword_L1")
+        {
+            Debug.LogWarning(other.name);
+        }
+
+    }
 
     #region Rseset In Editor
     protected override void LoadComponent()
     {
         base.LoadComponent();
         enemyFindPlayer = GetComponentInChildren<EnemyFindPlayer>();
+        model = transform.Find("Model").gameObject;
+        rigidbody = GetComponent<Rigidbody>();
     }
     protected override void ResetValue()
     {

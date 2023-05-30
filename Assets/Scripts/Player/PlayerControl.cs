@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class PlayerControl : NghiaMonoBehaviour
 {
+    [Header("Scripts")]
     [SerializeField]
     private PlayerMoving playerMoving;
     public PlayerMoving PlayerMoving { get { return playerMoving; } }
@@ -15,23 +16,32 @@ public class PlayerControl : NghiaMonoBehaviour
     public PlayerAttackSwordAnimator PlayerAttackSwordAnimator { get { return playerAttackSwordAnimator; } }
     [SerializeField]
     private PlayerChangeSkin playerChangeSkin;
+
+
+    [Header("===========================")]
     [SerializeField]
     private bool isExitState = true;
     public bool IsExitState { get { return isExitState; } }
-
     [SerializeField]
     protected string currentState;
     public string CurrentState { get { return currentState; } }
-
     [SerializeField]
     private Rigidbody rigidbody;
     public Rigidbody Rigidbody { get { return rigidbody; } }
+    [SerializeField]
+    private float hpPlayer;
+    public float HpPlayer { get { return hpPlayer; } }
+    [SerializeField]
+    private int maxHpPlayer;
+    public int MaxHpPlayer { get { return maxHpPlayer; } }
+
 
     private Vector3 moveddirection;
     public Vector3 Moveddirection { get { return moveddirection; } }
-
     private bool isAttack;
     public bool IsAttack { get { return isAttack; } }
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -43,10 +53,19 @@ public class PlayerControl : NghiaMonoBehaviour
     void Update()
     {
         moveddirection = InputManager.Instance.Direction;
-        isAttack = UIManager.Instance.ButtonNormalAttack.IsAttack;
+        isAttack = UIManager.Instance.UIGame.ButtonNormalAttack.IsAttack;
         if (!isAttack) return;
         isExitState = false;
 
+    }
+    private void FixedUpdate()
+    {
+        RemovePhysical();
+    }
+    private void RemovePhysical()
+    {
+        if (rigidbody.velocity == Vector3.zero) return;
+        rigidbody.velocity = Vector3.zero;
     }
     public void SetCurrentState(string newCurrentState)
     {
@@ -62,12 +81,31 @@ public class PlayerControl : NghiaMonoBehaviour
         playerChangeSkin = transform.Find("PlayerChangeSkin").GetComponent<PlayerChangeSkin>();
         rigidbody = GetComponent<Rigidbody>();
     }
+    protected override void ResetValue()
+    {
+        base.ResetValue();
+        hpPlayer = maxHpPlayer = 100;
+    }
     #endregion
     #region even anim
     public void State()
     {
-        if (UIManager.Instance.ButtonNormalAttack.IsAttack) return;
+        if (UIManager.Instance.UIGame.ButtonNormalAttack.IsAttack) return;
         isExitState = true;
     }
     #endregion
+    private void OnTriggerEnter(Collider other)
+    {
+        //Debug.Log(other.name);
+        #region test
+        if (other.name == "Collider")
+        {
+            var enemyControl = other.transform.parent.parent.parent.GetComponent<EnemyControl>();
+            if (enemyControl.IsAttack)
+            {
+                hpPlayer--;
+            }
+        }
+        #endregion
+    }
 }
