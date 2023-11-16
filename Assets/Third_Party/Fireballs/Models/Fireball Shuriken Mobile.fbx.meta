@@ -1,0 +1,228 @@
+fileFormatVersion: 2
+guid: 39a5ba0c363830543a1860b5b3f84688
+labels:
+- fireball
+- explosion
+- bang
+- crash
+- fire
+- effect
+- magic
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: //RootNode
+  - first:
+      1: 100002
+    second: Fireball_Mobile
+  - first:
+      1: 100004
+    second: Fireball_Mobile_Fragment
+  - first:
+      4: 400000
+    second: //RootNode
+  - first:
+      4: 400002
+    second: Fireball_Mobile
+  - first:
+      4: 400004
+    second: Fireball_Mobile_Fragment
+  - first:
+      23: 2300000
+    second: //RootNode
+  - first:
+      23: 2300002
+    second: Fireball_Mobile
+  - first:
+      23: 2300004
+    second: Fireball_Mobile_Fragment
+  - first:
+      33: 3300000
+    second: //RootNode
+  - first:
+      33: 3300002
+    second: Fireball_Mobile
+  - first:
+      33: 3300004
+    second: Fireball_Mobile_Fragment
+  - first:
+      43: 4300000
+    second: fireballSurface1
+  - first:
+      43: 4300002
+    second: fireballSurface2
+  - first:
+      43: 4300004
+    second: fireballSurface3
+  - first:
+      43: 4300006
+    second: fireballSurface4
+  - first:
+      43: 4300008
+    second: fireballSurface5
+  - first:
+      43: 4300010
+    second: fireballSurface6
+  - first:
+      43: 4300012
+    second: fireballSurface7
+  - first:
+      43: 4300014
+    second: fireballSurface8
+  - first:
+      43: 4300016
+    second: fireballSurface9
+  - first:
+      43: 4300018
+    second: fireballSurface10
+  - first:
+      43: 4300020
+    second: fireballSurface11
+  - first:
+      43: 4300022
+    second: fireballSurface12
+  - first:
+      43: 4300024
+    second: fireballSurface13
+  - first:
+      43: 4300026
+    second: fireballSurface14
+  - first:
+      43: 4300028
+    second: fireballSurface15
+  - first:
+      43: 4300030
+    second: fireballSurface16
+  - first:
+      43: 4300032
+    second: fireballSurface17
+  - first:
+      43: 4300034
+    second: fireballSurface18
+  - first:
+      43: 4300036
+    second: fireballSurface19
+  - first:
+      43: 4300038
+    second: fireballSurface20
+  - first:
+      43: 4300040
+    second: fireball
+  - first:
+      43: 4300042
+    second: pSphere1
+  - first:
+      43: 4300044
+    second: Fireball_Mobile
+  - first:
+      43: 4300046
+    second: Fireball_Mobile_Fragment
+  - first:
+      111: 11100000
+    second: //RootNode
+  externalObjects: {}
+  materials:
+    materialImportMode: 0
+    materialName: 3
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.3
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: 1
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 0.3
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 0
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  importBlendShapeDeformPercent: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
+  additionalBone: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

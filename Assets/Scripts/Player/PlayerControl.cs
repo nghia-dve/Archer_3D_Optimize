@@ -96,16 +96,32 @@ public class PlayerControl : NghiaMonoBehaviour
     #endregion
     private void OnTriggerEnter(Collider other)
     {
-        //Debug.Log(other.name);
+        Debug.Log(other.name);
         #region test
-        if (other.name == "Collider")
-        {
-            var enemyControl = other.transform.parent.parent.parent.GetComponent<EnemyControl>();
-            if (enemyControl.IsAttack)
-            {
-                hpPlayer--;
-            }
-        }
+        //if (other.name == "Fireball")
+        //{
+        //    var enemyControl = other.transform.parent.parent.parent.GetComponent<EnemyControl>();
+        //    if (enemyControl.IsAttack)
+        //    {
+        //        hpPlayer--;
+        //    }
+        //}
         #endregion
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log($"OnCollisionEnter = {collision.gameObject.tag}");
+        if (collision.gameObject.tag == "Fireball")
+        {
+            hpPlayer--;
+        }
+    }
+    private void OnParticleCollision(GameObject other)
+    {
+        Debug.Log(other.name);
+        if (other.gameObject.tag == "Fireball")
+        {
+            hpPlayer--;
+        }
     }
 }

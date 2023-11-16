@@ -8,11 +8,8 @@ public class EnemyControl : NghiaMonoBehaviour
     private EnemyFindPlayer enemyFindPlayer;
     public EnemyFindPlayer EnemyFindPlayer { get { return enemyFindPlayer; } }
     [SerializeField]
-    private float rangeAttack;
-    public float RangeAttack { get { return rangeAttack; } }
-    [SerializeField]
-    private bool isAttack;
-    public bool IsAttack { get { return isAttack; } }
+    private EnemyAttack enemyAttack;
+    public EnemyAttack EnemyAttack { get { return enemyAttack; } }
     [SerializeField]
     protected string currentState;
     public string CurrentState { get { return currentState; } }
@@ -23,6 +20,12 @@ public class EnemyControl : NghiaMonoBehaviour
     public GameObject Model { get { return model; } }
     [SerializeField]
     Rigidbody rigidbody;
+    [SerializeField]
+    private float rangeAttack;
+    public float RangeAttack { get { return rangeAttack; } }
+    [SerializeField]
+    private bool isAttack;
+    public bool IsAttack { get { return isAttack; } }
 
     //[SerializeField]
     //private bool isMeleeDamsge;
@@ -38,7 +41,6 @@ public class EnemyControl : NghiaMonoBehaviour
     void Update()
     {
         SetAttack();
-        //Debug.Log(currentState);
 
     }
     private void FixedUpdate()
@@ -80,12 +82,19 @@ public class EnemyControl : NghiaMonoBehaviour
         }
 
     }
+    #region Even Anim
+    public void EvenAttack()
+    {
+        enemyAttack.Attack();
+    }
+    #endregion
 
     #region Rseset In Editor
     protected override void LoadComponent()
     {
         base.LoadComponent();
         enemyFindPlayer = GetComponentInChildren<EnemyFindPlayer>();
+        enemyAttack = GetComponentInChildren<EnemyAttack>();
         model = transform.Find("Model").gameObject;
         rigidbody = GetComponent<Rigidbody>();
     }
