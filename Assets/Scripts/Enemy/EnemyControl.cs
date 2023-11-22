@@ -26,18 +26,6 @@ public class EnemyControl : NghiaMonoBehaviour
     [SerializeField]
     private bool isAttack;
     public bool IsAttack { get { return isAttack; } }
-
-    //[SerializeField]
-    //private bool isMeleeDamsge;
-    //public bool IsMeleeDamsge { get { return isMeleeDamsge; } }
-    // Start is called before the first frame update
-    void Start()
-    {
-
-
-    }
-
-    // Update is called once per frame
     void Update()
     {
         SetAttack();

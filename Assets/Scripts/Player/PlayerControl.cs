@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class PlayerControl : NghiaMonoBehaviour
 {
-    [Header("Scripts")]
     [SerializeField]
     private PlayerMoving playerMoving;
     public PlayerMoving PlayerMoving { get { return playerMoving; } }
@@ -16,18 +15,12 @@ public class PlayerControl : NghiaMonoBehaviour
     public PlayerAttackSwordAnimator PlayerAttackSwordAnimator { get { return playerAttackSwordAnimator; } }
     [SerializeField]
     private PlayerChangeSkin playerChangeSkin;
-
-
     [Header("===========================")]
     [SerializeField]
     private bool isExitState = true;
     public bool IsExitState { get { return isExitState; } }
     [SerializeField]
-    protected string currentState;
-    public string CurrentState { get { return currentState; } }
-    [SerializeField]
     private Rigidbody rigidbody;
-    public Rigidbody Rigidbody { get { return rigidbody; } }
     [SerializeField]
     private float hpPlayer;
     public float HpPlayer { get { return hpPlayer; } }
@@ -41,20 +34,12 @@ public class PlayerControl : NghiaMonoBehaviour
     private bool isAttack;
     public bool IsAttack { get { return isAttack; } }
 
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
     void Update()
     {
         moveddirection = InputManager.Instance.Direction;
         isAttack = UIManager.Instance.UIGame.ButtonNormalAttack.IsAttack;
         if (!isAttack) return;
+
         isExitState = false;
 
     }
@@ -66,10 +51,6 @@ public class PlayerControl : NghiaMonoBehaviour
     {
         if (rigidbody.velocity == Vector3.zero) return;
         rigidbody.velocity = Vector3.zero;
-    }
-    public void SetCurrentState(string newCurrentState)
-    {
-        currentState = newCurrentState;
     }
     #region reset editor
     protected override void LoadComponent()
@@ -94,20 +75,6 @@ public class PlayerControl : NghiaMonoBehaviour
         isExitState = true;
     }
     #endregion
-    private void OnTriggerEnter(Collider other)
-    {
-        Debug.Log(other.name);
-        #region test
-        //if (other.name == "Fireball")
-        //{
-        //    var enemyControl = other.transform.parent.parent.parent.GetComponent<EnemyControl>();
-        //    if (enemyControl.IsAttack)
-        //    {
-        //        hpPlayer--;
-        //    }
-        //}
-        #endregion
-    }
     private void OnCollisionEnter(Collision collision)
     {
         Debug.Log($"OnCollisionEnter = {collision.gameObject.tag}");

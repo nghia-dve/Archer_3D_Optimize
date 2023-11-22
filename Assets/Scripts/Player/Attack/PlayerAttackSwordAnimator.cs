@@ -6,19 +6,12 @@ public class PlayerAttackSwordAnimator : PalyerAnimator
 {
     void Update()
     {
-        if (!playerControl.IsAttack) return;
+        if (!playerControl.IsAttack || animator.GetBool("IsAttack")) return;
         _AnimatorAttack();
 
     }
     private void _AnimatorAttack()
     {
-        //var currentState =
-        //ChangeCurrentState(animSingleTwohandSwordAttack);
-        if (playerControl.CurrentState != animSingleTwohandSwordAttack)
-        {
-            animator.SetTrigger(animSingleTwohandSwordAttack);
-            playerControl.SetCurrentState(AnimSingleTwohandSwordAttack);
-        }
-
+        animator.SetBool("IsAttack", true);
     }
 }

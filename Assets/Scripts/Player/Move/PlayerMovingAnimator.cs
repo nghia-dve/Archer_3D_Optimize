@@ -9,19 +9,18 @@ public class PlayerMovingAnimator : PalyerAnimator
 
     void Update()
     {
+        if (animator.GetBool("IsAttack") && moveSpeed != 0)
+        {
+            moveSpeed = 0;
+            animator.SetFloat(animMove, moveSpeed);
+        }
         if (playerControl.IsAttack || !playerControl.IsExitState) return;
         MovingAnimator(playerControl.Moveddirection.magnitude);
     }
     private void MovingAnimator(float speed)
     {
-        //var currentState =
-        //ChangeCurrentState(animRun);
-        //Debug.Log("currentState" + currentState);
-        if (playerControl.CurrentState != animRun)
-        {
-            animator.SetTrigger(animRun);
-            playerControl.SetCurrentState(animRun);
-        }
+
+        animator.SetBool("IsAttack", false);
         if (speed <= 0 && moveSpeed != 0 && moveSpeed > 0)
         {
             moveSpeed -= Time.deltaTime;

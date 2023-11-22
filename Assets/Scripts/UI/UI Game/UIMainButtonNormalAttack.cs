@@ -16,12 +16,6 @@ public class UIMainButtonNormalAttack : NghiaMonoBehaviour
     {
         AddEvenButton(buttonAttack);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
     private void AddEvenButton(Button ButtonAttack)
     {
         EventTrigger eventTrigger = ButtonAttack.GetComponent<EventTrigger>();

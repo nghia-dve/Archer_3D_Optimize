@@ -8,14 +8,6 @@ public class EnemyMoving : Movement
     private EnemyControl enemyControl;
     [SerializeField]
     private float EnemyMoveSpeed = 2;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
     void Update()
     {
         var target = enemyControl.EnemyFindPlayer.VisibleTargets;
