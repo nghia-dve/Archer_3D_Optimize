@@ -1,504 +1,1490 @@
 fileFormatVersion: 2
 guid: dc603c42b6599174e901596a1f756de4
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: Arrow1
-    100002: Arrow2
-    100004: Axe1_L
-    100006: Axe1_R
-    100008: BackPack1
-    100010: BackPack2
-    100012: Backpack3
-    100014: backpackShield01
-    100016: backpackShield02
-    100018: ball_l
-    100020: ball_r
-    100022: Belt1
-    100024: Belt2
-    100026: Belt3
-    100028: Bow1
-    100030: Bow2
-    100032: calf_l
-    100034: calf_r
-    100036: //RootNode
-    100038: clavicle_l
-    100040: clavicle_r
-    100042: Cloth1
-    100044: Cloth2
-    100046: Cloth3
-    100048: Cloth4
-    100050: Cloth5
-    100052: Cloth6
-    100054: Cloth7
-    100056: Crown1
-    100058: Crown2
-    100060: Crown3
-    100062: Crown4
-    100064: Face1
-    100066: Face2
-    100068: Face3
-    100070: Face4
-    100072: foot_l
-    100074: foot_r
-    100076: Glove1
-    100078: Glove2
-    100080: Glove3
-    100082: Glove4
-    100084: Glove5
-    100086: Glove6
-    100088: goggle
-    100090: Hair1
-    100092: Hair1Half
-    100094: Hair2
-    100096: Hair2Half
-    100098: Hair3
-    100100: Hair3Half
-    100102: Hair4
-    100104: Hair4Half
-    100106: Hair5
-    100108: Hair5Half
-    100110: Hammer1_L
-    100112: Hammer1_R
-    100114: hand_l
-    100116: hand_r
-    100118: Hat1
-    100120: Hat2
-    100122: Hat3
-    100124: head
-    100126: Helm1
-    100128: Helm2
-    100130: Helm3
-    100132: Helm4
-    100134: Helm5
-    100136: Helm6
-    100138: Helm7
-    100140: index_01_l
-    100142: index_01_r
-    100144: index_02_l
-    100146: index_02_r
-    100148: index_03_l
-    100150: index_03_r
-    100152: lowerarm_l
-    100154: lowerarm_r
-    100156: middle_01_l
-    100158: middle_01_r
-    100160: middle_02_l
-    100162: middle_02_r
-    100164: middle_03_l
-    100166: middle_03_r
-    100168: neck_01
-    100170: pelvis
-    100172: pinky_01_l
-    100174: pinky_01_r
-    100176: pinky_02_l
-    100178: pinky_02_r
-    100180: pinky_03_l
-    100182: pinky_03_r
-    100184: ring_01_l
-    100186: ring_01_r
-    100188: ring_02_l
-    100190: ring_02_r
-    100192: ring_03_l
-    100194: ring_03_r
-    100196: root
-    100198: Shield1
-    100200: Shield2
-    100202: Shield3
-    100204: Shield4
-    100206: Shield5
-    100208: Shoe1
-    100210: Shoe2
-    100212: Shoe3
-    100214: Shoe4
-    100216: Shoe5
-    100218: Shoe6
-    100220: ShoulderPad1
-    100222: ShoulderPad2
-    100224: ShoulderPad3
-    100226: ShoulderPad4
-    100228: ShoulderPad5
-    100230: ShoulderPad6
-    100232: shoulderPad_l
-    100234: shoulderPad_r
-    100236: spine_01
-    100238: spine_02
-    100240: spine_03
-    100242: Sword1_L
-    100244: Sword1_R
-    100246: Sword2_L
-    100248: Sword2_R
-    100250: Sword3_L
-    100252: Sword3_R
-    100254: Sword4_L
-    100256: Sword4_R
-    100258: thigh_l
-    100260: thigh_r
-    100262: thumb_01_l
-    100264: thumb_01_r
-    100266: thumb_02_l
-    100268: thumb_02_r
-    100270: thumb_03_l
-    100272: thumb_03_r
-    100274: upperarm_l
-    100276: upperarm_r
-    100278: Wand1_L
-    100280: Wand1_R
-    100282: Wand2_L
-    100284: Wand2_R
-    100286: weaponPosition_l
-    100288: weaponPosition_r
-    100290: weaponPositionTop
-    100292: weaponShield_l
-    100294: weaponShield_r
-    400000: Arrow1
-    400002: Arrow2
-    400004: Axe1_L
-    400006: Axe1_R
-    400008: BackPack1
-    400010: BackPack2
-    400012: Backpack3
-    400014: backpackShield01
-    400016: backpackShield02
-    400018: ball_l
-    400020: ball_r
-    400022: Belt1
-    400024: Belt2
-    400026: Belt3
-    400028: Bow1
-    400030: Bow2
-    400032: calf_l
-    400034: calf_r
-    400036: //RootNode
-    400038: clavicle_l
-    400040: clavicle_r
-    400042: Cloth1
-    400044: Cloth2
-    400046: Cloth3
-    400048: Cloth4
-    400050: Cloth5
-    400052: Cloth6
-    400054: Cloth7
-    400056: Crown1
-    400058: Crown2
-    400060: Crown3
-    400062: Crown4
-    400064: Face1
-    400066: Face2
-    400068: Face3
-    400070: Face4
-    400072: foot_l
-    400074: foot_r
-    400076: Glove1
-    400078: Glove2
-    400080: Glove3
-    400082: Glove4
-    400084: Glove5
-    400086: Glove6
-    400088: goggle
-    400090: Hair1
-    400092: Hair1Half
-    400094: Hair2
-    400096: Hair2Half
-    400098: Hair3
-    400100: Hair3Half
-    400102: Hair4
-    400104: Hair4Half
-    400106: Hair5
-    400108: Hair5Half
-    400110: Hammer1_L
-    400112: Hammer1_R
-    400114: hand_l
-    400116: hand_r
-    400118: Hat1
-    400120: Hat2
-    400122: Hat3
-    400124: head
-    400126: Helm1
-    400128: Helm2
-    400130: Helm3
-    400132: Helm4
-    400134: Helm5
-    400136: Helm6
-    400138: Helm7
-    400140: index_01_l
-    400142: index_01_r
-    400144: index_02_l
-    400146: index_02_r
-    400148: index_03_l
-    400150: index_03_r
-    400152: lowerarm_l
-    400154: lowerarm_r
-    400156: middle_01_l
-    400158: middle_01_r
-    400160: middle_02_l
-    400162: middle_02_r
-    400164: middle_03_l
-    400166: middle_03_r
-    400168: neck_01
-    400170: pelvis
-    400172: pinky_01_l
-    400174: pinky_01_r
-    400176: pinky_02_l
-    400178: pinky_02_r
-    400180: pinky_03_l
-    400182: pinky_03_r
-    400184: ring_01_l
-    400186: ring_01_r
-    400188: ring_02_l
-    400190: ring_02_r
-    400192: ring_03_l
-    400194: ring_03_r
-    400196: root
-    400198: Shield1
-    400200: Shield2
-    400202: Shield3
-    400204: Shield4
-    400206: Shield5
-    400208: Shoe1
-    400210: Shoe2
-    400212: Shoe3
-    400214: Shoe4
-    400216: Shoe5
-    400218: Shoe6
-    400220: ShoulderPad1
-    400222: ShoulderPad2
-    400224: ShoulderPad3
-    400226: ShoulderPad4
-    400228: ShoulderPad5
-    400230: ShoulderPad6
-    400232: shoulderPad_l
-    400234: shoulderPad_r
-    400236: spine_01
-    400238: spine_02
-    400240: spine_03
-    400242: Sword1_L
-    400244: Sword1_R
-    400246: Sword2_L
-    400248: Sword2_R
-    400250: Sword3_L
-    400252: Sword3_R
-    400254: Sword4_L
-    400256: Sword4_R
-    400258: thigh_l
-    400260: thigh_r
-    400262: thumb_01_l
-    400264: thumb_01_r
-    400266: thumb_02_l
-    400268: thumb_02_r
-    400270: thumb_03_l
-    400272: thumb_03_r
-    400274: upperarm_l
-    400276: upperarm_r
-    400278: Wand1_L
-    400280: Wand1_R
-    400282: Wand2_L
-    400284: Wand2_R
-    400286: weaponPosition_l
-    400288: weaponPosition_r
-    400290: weaponPositionTop
-    400292: weaponShield_l
-    400294: weaponShield_r
-    2300000: Arrow1
-    2300002: Arrow2
-    2300004: Axe1_L
-    2300006: Axe1_R
-    2300008: BackPack1
-    2300010: BackPack2
-    2300012: Backpack3
-    2300014: Bow1
-    2300016: Bow2
-    2300018: Hammer1_L
-    2300020: Hammer1_R
-    2300022: Shield1
-    2300024: Shield2
-    2300026: Shield3
-    2300028: Shield4
-    2300030: Shield5
-    2300032: Sword1_L
-    2300034: Sword1_R
-    2300036: Sword2_L
-    2300038: Sword2_R
-    2300040: Sword3_L
-    2300042: Sword3_R
-    2300044: Sword4_L
-    2300046: Sword4_R
-    2300048: Wand1_L
-    2300050: Wand1_R
-    2300052: Wand2_L
-    2300054: Wand2_R
-    3300000: Arrow1
-    3300002: Arrow2
-    3300004: Axe1_L
-    3300006: Axe1_R
-    3300008: BackPack1
-    3300010: BackPack2
-    3300012: Backpack3
-    3300014: Bow1
-    3300016: Bow2
-    3300018: Hammer1_L
-    3300020: Hammer1_R
-    3300022: Shield1
-    3300024: Shield2
-    3300026: Shield3
-    3300028: Shield4
-    3300030: Shield5
-    3300032: Sword1_L
-    3300034: Sword1_R
-    3300036: Sword2_L
-    3300038: Sword2_R
-    3300040: Sword3_L
-    3300042: Sword3_R
-    3300044: Sword4_L
-    3300046: Sword4_R
-    3300048: Wand1_L
-    3300050: Wand1_R
-    3300052: Wand2_L
-    3300054: Wand2_R
-    4300000: BackPack1
-    4300002: BackPack2
-    4300004: Backpack3
-    4300006: Bow1
-    4300008: Bow2
-    4300010: Sword4_L
-    4300012: Sword3_L
-    4300014: Sword2_L
-    4300016: Sword1_L
-    4300018: Hammer1_L
-    4300020: Axe1_L
-    4300022: Wand2_L
-    4300024: Wand1_L
-    4300026: Shield5
-    4300028: Shield4
-    4300030: Shield3
-    4300032: Shield2
-    4300034: Shield1
-    4300036: Arrow1
-    4300038: Arrow2
-    4300040: Sword4_R
-    4300042: Sword3_R
-    4300044: Sword2_R
-    4300046: Sword1_R
-    4300048: Hammer1_R
-    4300050: Axe1_R
-    4300052: Wand2_R
-    4300054: Wand1_R
-    4300056: Face1
-    4300058: Face2
-    4300060: Face3
-    4300062: Face4
-    4300064: Cloth1
-    4300066: Cloth2
-    4300068: Cloth3
-    4300070: Cloth4
-    4300072: Cloth5
-    4300074: Cloth6
-    4300076: Cloth7
-    4300078: Hair1
-    4300080: Hair1Half
-    4300082: Hair2
-    4300084: Hair2Half
-    4300086: Hair3
-    4300088: Hair3Half
-    4300090: Hair4
-    4300092: Hair4Half
-    4300094: Hair5
-    4300096: Hair5Half
-    4300098: Glove1
-    4300100: Glove2
-    4300102: Glove3
-    4300104: Glove4
-    4300106: Glove5
-    4300108: Glove6
-    4300110: Shoe1
-    4300112: Shoe2
-    4300114: Shoe3
-    4300116: Shoe4
-    4300118: Shoe5
-    4300120: Shoe6
-    4300122: ShoulderPad1
-    4300124: ShoulderPad2
-    4300126: ShoulderPad3
-    4300128: ShoulderPad4
-    4300130: ShoulderPad5
-    4300132: ShoulderPad6
-    4300134: Hat1
-    4300136: Hat2
-    4300138: Hat3
-    4300140: Helm1
-    4300142: Helm2
-    4300144: Helm3
-    4300146: Helm4
-    4300148: Helm5
-    4300150: Helm6
-    4300152: Helm7
-    4300154: Crown1
-    4300156: Crown2
-    4300158: Crown3
-    4300160: Crown4
-    4300162: Belt1
-    4300164: Belt2
-    4300166: Belt3
-    9500000: //RootNode
-    13700000: Belt1
-    13700002: Belt2
-    13700004: Belt3
-    13700006: Cloth1
-    13700008: Cloth2
-    13700010: Cloth3
-    13700012: Cloth4
-    13700014: Cloth5
-    13700016: Cloth6
-    13700018: Cloth7
-    13700020: Crown1
-    13700022: Crown2
-    13700024: Crown3
-    13700026: Crown4
-    13700028: Face1
-    13700030: Face2
-    13700032: Face3
-    13700034: Face4
-    13700036: Glove1
-    13700038: Glove2
-    13700040: Glove3
-    13700042: Glove4
-    13700044: Glove5
-    13700046: Glove6
-    13700048: Hair1
-    13700050: Hair1Half
-    13700052: Hair2
-    13700054: Hair2Half
-    13700056: Hair3
-    13700058: Hair3Half
-    13700060: Hair4
-    13700062: Hair4Half
-    13700064: Hair5
-    13700066: Hair5Half
-    13700068: Hat1
-    13700070: Hat2
-    13700072: Hat3
-    13700074: Helm1
-    13700076: Helm2
-    13700078: Helm3
-    13700080: Helm4
-    13700082: Helm5
-    13700084: Helm6
-    13700086: Helm7
-    13700088: Shoe1
-    13700090: Shoe2
-    13700092: Shoe3
-    13700094: Shoe4
-    13700096: Shoe5
-    13700098: Shoe6
-    13700100: ShoulderPad1
-    13700102: ShoulderPad2
-    13700104: ShoulderPad3
-    13700106: ShoulderPad4
-    13700108: ShoulderPad5
-    13700110: ShoulderPad6
+  serializedVersion: 22200
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Arrow1
+  - first:
+      1: 100002
+    second: Arrow2
+  - first:
+      1: 100004
+    second: Axe1_L
+  - first:
+      1: 100006
+    second: Axe1_R
+  - first:
+      1: 100008
+    second: BackPack1
+  - first:
+      1: 100010
+    second: BackPack2
+  - first:
+      1: 100012
+    second: Backpack3
+  - first:
+      1: 100014
+    second: backpackShield01
+  - first:
+      1: 100016
+    second: backpackShield02
+  - first:
+      1: 100018
+    second: ball_l
+  - first:
+      1: 100020
+    second: ball_r
+  - first:
+      1: 100022
+    second: Belt1
+  - first:
+      1: 100024
+    second: Belt2
+  - first:
+      1: 100026
+    second: Belt3
+  - first:
+      1: 100028
+    second: Bow1
+  - first:
+      1: 100030
+    second: Bow2
+  - first:
+      1: 100032
+    second: calf_l
+  - first:
+      1: 100034
+    second: calf_r
+  - first:
+      1: 100036
+    second: //RootNode
+  - first:
+      1: 100038
+    second: clavicle_l
+  - first:
+      1: 100040
+    second: clavicle_r
+  - first:
+      1: 100042
+    second: Cloth1
+  - first:
+      1: 100044
+    second: Cloth2
+  - first:
+      1: 100046
+    second: Cloth3
+  - first:
+      1: 100048
+    second: Cloth4
+  - first:
+      1: 100050
+    second: Cloth5
+  - first:
+      1: 100052
+    second: Cloth6
+  - first:
+      1: 100054
+    second: Cloth7
+  - first:
+      1: 100056
+    second: Crown1
+  - first:
+      1: 100058
+    second: Crown2
+  - first:
+      1: 100060
+    second: Crown3
+  - first:
+      1: 100062
+    second: Crown4
+  - first:
+      1: 100064
+    second: Face1
+  - first:
+      1: 100066
+    second: Face2
+  - first:
+      1: 100068
+    second: Face3
+  - first:
+      1: 100070
+    second: Face4
+  - first:
+      1: 100072
+    second: foot_l
+  - first:
+      1: 100074
+    second: foot_r
+  - first:
+      1: 100076
+    second: Glove1
+  - first:
+      1: 100078
+    second: Glove2
+  - first:
+      1: 100080
+    second: Glove3
+  - first:
+      1: 100082
+    second: Glove4
+  - first:
+      1: 100084
+    second: Glove5
+  - first:
+      1: 100086
+    second: Glove6
+  - first:
+      1: 100088
+    second: goggle
+  - first:
+      1: 100090
+    second: Hair1
+  - first:
+      1: 100092
+    second: Hair1Half
+  - first:
+      1: 100094
+    second: Hair2
+  - first:
+      1: 100096
+    second: Hair2Half
+  - first:
+      1: 100098
+    second: Hair3
+  - first:
+      1: 100100
+    second: Hair3Half
+  - first:
+      1: 100102
+    second: Hair4
+  - first:
+      1: 100104
+    second: Hair4Half
+  - first:
+      1: 100106
+    second: Hair5
+  - first:
+      1: 100108
+    second: Hair5Half
+  - first:
+      1: 100110
+    second: Hammer1_L
+  - first:
+      1: 100112
+    second: Hammer1_R
+  - first:
+      1: 100114
+    second: hand_l
+  - first:
+      1: 100116
+    second: hand_r
+  - first:
+      1: 100118
+    second: Hat1
+  - first:
+      1: 100120
+    second: Hat2
+  - first:
+      1: 100122
+    second: Hat3
+  - first:
+      1: 100124
+    second: head
+  - first:
+      1: 100126
+    second: Helm1
+  - first:
+      1: 100128
+    second: Helm2
+  - first:
+      1: 100130
+    second: Helm3
+  - first:
+      1: 100132
+    second: Helm4
+  - first:
+      1: 100134
+    second: Helm5
+  - first:
+      1: 100136
+    second: Helm6
+  - first:
+      1: 100138
+    second: Helm7
+  - first:
+      1: 100140
+    second: index_01_l
+  - first:
+      1: 100142
+    second: index_01_r
+  - first:
+      1: 100144
+    second: index_02_l
+  - first:
+      1: 100146
+    second: index_02_r
+  - first:
+      1: 100148
+    second: index_03_l
+  - first:
+      1: 100150
+    second: index_03_r
+  - first:
+      1: 100152
+    second: lowerarm_l
+  - first:
+      1: 100154
+    second: lowerarm_r
+  - first:
+      1: 100156
+    second: middle_01_l
+  - first:
+      1: 100158
+    second: middle_01_r
+  - first:
+      1: 100160
+    second: middle_02_l
+  - first:
+      1: 100162
+    second: middle_02_r
+  - first:
+      1: 100164
+    second: middle_03_l
+  - first:
+      1: 100166
+    second: middle_03_r
+  - first:
+      1: 100168
+    second: neck_01
+  - first:
+      1: 100170
+    second: pelvis
+  - first:
+      1: 100172
+    second: pinky_01_l
+  - first:
+      1: 100174
+    second: pinky_01_r
+  - first:
+      1: 100176
+    second: pinky_02_l
+  - first:
+      1: 100178
+    second: pinky_02_r
+  - first:
+      1: 100180
+    second: pinky_03_l
+  - first:
+      1: 100182
+    second: pinky_03_r
+  - first:
+      1: 100184
+    second: ring_01_l
+  - first:
+      1: 100186
+    second: ring_01_r
+  - first:
+      1: 100188
+    second: ring_02_l
+  - first:
+      1: 100190
+    second: ring_02_r
+  - first:
+      1: 100192
+    second: ring_03_l
+  - first:
+      1: 100194
+    second: ring_03_r
+  - first:
+      1: 100196
+    second: root
+  - first:
+      1: 100198
+    second: Shield1
+  - first:
+      1: 100200
+    second: Shield2
+  - first:
+      1: 100202
+    second: Shield3
+  - first:
+      1: 100204
+    second: Shield4
+  - first:
+      1: 100206
+    second: Shield5
+  - first:
+      1: 100208
+    second: Shoe1
+  - first:
+      1: 100210
+    second: Shoe2
+  - first:
+      1: 100212
+    second: Shoe3
+  - first:
+      1: 100214
+    second: Shoe4
+  - first:
+      1: 100216
+    second: Shoe5
+  - first:
+      1: 100218
+    second: Shoe6
+  - first:
+      1: 100220
+    second: ShoulderPad1
+  - first:
+      1: 100222
+    second: ShoulderPad2
+  - first:
+      1: 100224
+    second: ShoulderPad3
+  - first:
+      1: 100226
+    second: ShoulderPad4
+  - first:
+      1: 100228
+    second: ShoulderPad5
+  - first:
+      1: 100230
+    second: ShoulderPad6
+  - first:
+      1: 100232
+    second: shoulderPad_l
+  - first:
+      1: 100234
+    second: shoulderPad_r
+  - first:
+      1: 100236
+    second: spine_01
+  - first:
+      1: 100238
+    second: spine_02
+  - first:
+      1: 100240
+    second: spine_03
+  - first:
+      1: 100242
+    second: Sword1_L
+  - first:
+      1: 100244
+    second: Sword1_R
+  - first:
+      1: 100246
+    second: Sword2_L
+  - first:
+      1: 100248
+    second: Sword2_R
+  - first:
+      1: 100250
+    second: Sword3_L
+  - first:
+      1: 100252
+    second: Sword3_R
+  - first:
+      1: 100254
+    second: Sword4_L
+  - first:
+      1: 100256
+    second: Sword4_R
+  - first:
+      1: 100258
+    second: thigh_l
+  - first:
+      1: 100260
+    second: thigh_r
+  - first:
+      1: 100262
+    second: thumb_01_l
+  - first:
+      1: 100264
+    second: thumb_01_r
+  - first:
+      1: 100266
+    second: thumb_02_l
+  - first:
+      1: 100268
+    second: thumb_02_r
+  - first:
+      1: 100270
+    second: thumb_03_l
+  - first:
+      1: 100272
+    second: thumb_03_r
+  - first:
+      1: 100274
+    second: upperarm_l
+  - first:
+      1: 100276
+    second: upperarm_r
+  - first:
+      1: 100278
+    second: Wand1_L
+  - first:
+      1: 100280
+    second: Wand1_R
+  - first:
+      1: 100282
+    second: Wand2_L
+  - first:
+      1: 100284
+    second: Wand2_R
+  - first:
+      1: 100286
+    second: weaponPosition_l
+  - first:
+      1: 100288
+    second: weaponPosition_r
+  - first:
+      1: 100290
+    second: weaponPositionTop
+  - first:
+      1: 100292
+    second: weaponShield_l
+  - first:
+      1: 100294
+    second: weaponShield_r
+  - first:
+      4: 400000
+    second: Arrow1
+  - first:
+      4: 400002
+    second: Arrow2
+  - first:
+      4: 400004
+    second: Axe1_L
+  - first:
+      4: 400006
+    second: Axe1_R
+  - first:
+      4: 400008
+    second: BackPack1
+  - first:
+      4: 400010
+    second: BackPack2
+  - first:
+      4: 400012
+    second: Backpack3
+  - first:
+      4: 400014
+    second: backpackShield01
+  - first:
+      4: 400016
+    second: backpackShield02
+  - first:
+      4: 400018
+    second: ball_l
+  - first:
+      4: 400020
+    second: ball_r
+  - first:
+      4: 400022
+    second: Belt1
+  - first:
+      4: 400024
+    second: Belt2
+  - first:
+      4: 400026
+    second: Belt3
+  - first:
+      4: 400028
+    second: Bow1
+  - first:
+      4: 400030
+    second: Bow2
+  - first:
+      4: 400032
+    second: calf_l
+  - first:
+      4: 400034
+    second: calf_r
+  - first:
+      4: 400036
+    second: //RootNode
+  - first:
+      4: 400038
+    second: clavicle_l
+  - first:
+      4: 400040
+    second: clavicle_r
+  - first:
+      4: 400042
+    second: Cloth1
+  - first:
+      4: 400044
+    second: Cloth2
+  - first:
+      4: 400046
+    second: Cloth3
+  - first:
+      4: 400048
+    second: Cloth4
+  - first:
+      4: 400050
+    second: Cloth5
+  - first:
+      4: 400052
+    second: Cloth6
+  - first:
+      4: 400054
+    second: Cloth7
+  - first:
+      4: 400056
+    second: Crown1
+  - first:
+      4: 400058
+    second: Crown2
+  - first:
+      4: 400060
+    second: Crown3
+  - first:
+      4: 400062
+    second: Crown4
+  - first:
+      4: 400064
+    second: Face1
+  - first:
+      4: 400066
+    second: Face2
+  - first:
+      4: 400068
+    second: Face3
+  - first:
+      4: 400070
+    second: Face4
+  - first:
+      4: 400072
+    second: foot_l
+  - first:
+      4: 400074
+    second: foot_r
+  - first:
+      4: 400076
+    second: Glove1
+  - first:
+      4: 400078
+    second: Glove2
+  - first:
+      4: 400080
+    second: Glove3
+  - first:
+      4: 400082
+    second: Glove4
+  - first:
+      4: 400084
+    second: Glove5
+  - first:
+      4: 400086
+    second: Glove6
+  - first:
+      4: 400088
+    second: goggle
+  - first:
+      4: 400090
+    second: Hair1
+  - first:
+      4: 400092
+    second: Hair1Half
+  - first:
+      4: 400094
+    second: Hair2
+  - first:
+      4: 400096
+    second: Hair2Half
+  - first:
+      4: 400098
+    second: Hair3
+  - first:
+      4: 400100
+    second: Hair3Half
+  - first:
+      4: 400102
+    second: Hair4
+  - first:
+      4: 400104
+    second: Hair4Half
+  - first:
+      4: 400106
+    second: Hair5
+  - first:
+      4: 400108
+    second: Hair5Half
+  - first:
+      4: 400110
+    second: Hammer1_L
+  - first:
+      4: 400112
+    second: Hammer1_R
+  - first:
+      4: 400114
+    second: hand_l
+  - first:
+      4: 400116
+    second: hand_r
+  - first:
+      4: 400118
+    second: Hat1
+  - first:
+      4: 400120
+    second: Hat2
+  - first:
+      4: 400122
+    second: Hat3
+  - first:
+      4: 400124
+    second: head
+  - first:
+      4: 400126
+    second: Helm1
+  - first:
+      4: 400128
+    second: Helm2
+  - first:
+      4: 400130
+    second: Helm3
+  - first:
+      4: 400132
+    second: Helm4
+  - first:
+      4: 400134
+    second: Helm5
+  - first:
+      4: 400136
+    second: Helm6
+  - first:
+      4: 400138
+    second: Helm7
+  - first:
+      4: 400140
+    second: index_01_l
+  - first:
+      4: 400142
+    second: index_01_r
+  - first:
+      4: 400144
+    second: index_02_l
+  - first:
+      4: 400146
+    second: index_02_r
+  - first:
+      4: 400148
+    second: index_03_l
+  - first:
+      4: 400150
+    second: index_03_r
+  - first:
+      4: 400152
+    second: lowerarm_l
+  - first:
+      4: 400154
+    second: lowerarm_r
+  - first:
+      4: 400156
+    second: middle_01_l
+  - first:
+      4: 400158
+    second: middle_01_r
+  - first:
+      4: 400160
+    second: middle_02_l
+  - first:
+      4: 400162
+    second: middle_02_r
+  - first:
+      4: 400164
+    second: middle_03_l
+  - first:
+      4: 400166
+    second: middle_03_r
+  - first:
+      4: 400168
+    second: neck_01
+  - first:
+      4: 400170
+    second: pelvis
+  - first:
+      4: 400172
+    second: pinky_01_l
+  - first:
+      4: 400174
+    second: pinky_01_r
+  - first:
+      4: 400176
+    second: pinky_02_l
+  - first:
+      4: 400178
+    second: pinky_02_r
+  - first:
+      4: 400180
+    second: pinky_03_l
+  - first:
+      4: 400182
+    second: pinky_03_r
+  - first:
+      4: 400184
+    second: ring_01_l
+  - first:
+      4: 400186
+    second: ring_01_r
+  - first:
+      4: 400188
+    second: ring_02_l
+  - first:
+      4: 400190
+    second: ring_02_r
+  - first:
+      4: 400192
+    second: ring_03_l
+  - first:
+      4: 400194
+    second: ring_03_r
+  - first:
+      4: 400196
+    second: root
+  - first:
+      4: 400198
+    second: Shield1
+  - first:
+      4: 400200
+    second: Shield2
+  - first:
+      4: 400202
+    second: Shield3
+  - first:
+      4: 400204
+    second: Shield4
+  - first:
+      4: 400206
+    second: Shield5
+  - first:
+      4: 400208
+    second: Shoe1
+  - first:
+      4: 400210
+    second: Shoe2
+  - first:
+      4: 400212
+    second: Shoe3
+  - first:
+      4: 400214
+    second: Shoe4
+  - first:
+      4: 400216
+    second: Shoe5
+  - first:
+      4: 400218
+    second: Shoe6
+  - first:
+      4: 400220
+    second: ShoulderPad1
+  - first:
+      4: 400222
+    second: ShoulderPad2
+  - first:
+      4: 400224
+    second: ShoulderPad3
+  - first:
+      4: 400226
+    second: ShoulderPad4
+  - first:
+      4: 400228
+    second: ShoulderPad5
+  - first:
+      4: 400230
+    second: ShoulderPad6
+  - first:
+      4: 400232
+    second: shoulderPad_l
+  - first:
+      4: 400234
+    second: shoulderPad_r
+  - first:
+      4: 400236
+    second: spine_01
+  - first:
+      4: 400238
+    second: spine_02
+  - first:
+      4: 400240
+    second: spine_03
+  - first:
+      4: 400242
+    second: Sword1_L
+  - first:
+      4: 400244
+    second: Sword1_R
+  - first:
+      4: 400246
+    second: Sword2_L
+  - first:
+      4: 400248
+    second: Sword2_R
+  - first:
+      4: 400250
+    second: Sword3_L
+  - first:
+      4: 400252
+    second: Sword3_R
+  - first:
+      4: 400254
+    second: Sword4_L
+  - first:
+      4: 400256
+    second: Sword4_R
+  - first:
+      4: 400258
+    second: thigh_l
+  - first:
+      4: 400260
+    second: thigh_r
+  - first:
+      4: 400262
+    second: thumb_01_l
+  - first:
+      4: 400264
+    second: thumb_01_r
+  - first:
+      4: 400266
+    second: thumb_02_l
+  - first:
+      4: 400268
+    second: thumb_02_r
+  - first:
+      4: 400270
+    second: thumb_03_l
+  - first:
+      4: 400272
+    second: thumb_03_r
+  - first:
+      4: 400274
+    second: upperarm_l
+  - first:
+      4: 400276
+    second: upperarm_r
+  - first:
+      4: 400278
+    second: Wand1_L
+  - first:
+      4: 400280
+    second: Wand1_R
+  - first:
+      4: 400282
+    second: Wand2_L
+  - first:
+      4: 400284
+    second: Wand2_R
+  - first:
+      4: 400286
+    second: weaponPosition_l
+  - first:
+      4: 400288
+    second: weaponPosition_r
+  - first:
+      4: 400290
+    second: weaponPositionTop
+  - first:
+      4: 400292
+    second: weaponShield_l
+  - first:
+      4: 400294
+    second: weaponShield_r
+  - first:
+      23: 2300000
+    second: Arrow1
+  - first:
+      23: 2300002
+    second: Arrow2
+  - first:
+      23: 2300004
+    second: Axe1_L
+  - first:
+      23: 2300006
+    second: Axe1_R
+  - first:
+      23: 2300008
+    second: BackPack1
+  - first:
+      23: 2300010
+    second: BackPack2
+  - first:
+      23: 2300012
+    second: Backpack3
+  - first:
+      23: 2300014
+    second: Bow1
+  - first:
+      23: 2300016
+    second: Bow2
+  - first:
+      23: 2300018
+    second: Hammer1_L
+  - first:
+      23: 2300020
+    second: Hammer1_R
+  - first:
+      23: 2300022
+    second: Shield1
+  - first:
+      23: 2300024
+    second: Shield2
+  - first:
+      23: 2300026
+    second: Shield3
+  - first:
+      23: 2300028
+    second: Shield4
+  - first:
+      23: 2300030
+    second: Shield5
+  - first:
+      23: 2300032
+    second: Sword1_L
+  - first:
+      23: 2300034
+    second: Sword1_R
+  - first:
+      23: 2300036
+    second: Sword2_L
+  - first:
+      23: 2300038
+    second: Sword2_R
+  - first:
+      23: 2300040
+    second: Sword3_L
+  - first:
+      23: 2300042
+    second: Sword3_R
+  - first:
+      23: 2300044
+    second: Sword4_L
+  - first:
+      23: 2300046
+    second: Sword4_R
+  - first:
+      23: 2300048
+    second: Wand1_L
+  - first:
+      23: 2300050
+    second: Wand1_R
+  - first:
+      23: 2300052
+    second: Wand2_L
+  - first:
+      23: 2300054
+    second: Wand2_R
+  - first:
+      33: 3300000
+    second: Arrow1
+  - first:
+      33: 3300002
+    second: Arrow2
+  - first:
+      33: 3300004
+    second: Axe1_L
+  - first:
+      33: 3300006
+    second: Axe1_R
+  - first:
+      33: 3300008
+    second: BackPack1
+  - first:
+      33: 3300010
+    second: BackPack2
+  - first:
+      33: 3300012
+    second: Backpack3
+  - first:
+      33: 3300014
+    second: Bow1
+  - first:
+      33: 3300016
+    second: Bow2
+  - first:
+      33: 3300018
+    second: Hammer1_L
+  - first:
+      33: 3300020
+    second: Hammer1_R
+  - first:
+      33: 3300022
+    second: Shield1
+  - first:
+      33: 3300024
+    second: Shield2
+  - first:
+      33: 3300026
+    second: Shield3
+  - first:
+      33: 3300028
+    second: Shield4
+  - first:
+      33: 3300030
+    second: Shield5
+  - first:
+      33: 3300032
+    second: Sword1_L
+  - first:
+      33: 3300034
+    second: Sword1_R
+  - first:
+      33: 3300036
+    second: Sword2_L
+  - first:
+      33: 3300038
+    second: Sword2_R
+  - first:
+      33: 3300040
+    second: Sword3_L
+  - first:
+      33: 3300042
+    second: Sword3_R
+  - first:
+      33: 3300044
+    second: Sword4_L
+  - first:
+      33: 3300046
+    second: Sword4_R
+  - first:
+      33: 3300048
+    second: Wand1_L
+  - first:
+      33: 3300050
+    second: Wand1_R
+  - first:
+      33: 3300052
+    second: Wand2_L
+  - first:
+      33: 3300054
+    second: Wand2_R
+  - first:
+      43: 4300000
+    second: BackPack1
+  - first:
+      43: 4300002
+    second: BackPack2
+  - first:
+      43: 4300004
+    second: Backpack3
+  - first:
+      43: 4300006
+    second: Bow1
+  - first:
+      43: 4300008
+    second: Bow2
+  - first:
+      43: 4300010
+    second: Sword4_L
+  - first:
+      43: 4300012
+    second: Sword3_L
+  - first:
+      43: 4300014
+    second: Sword2_L
+  - first:
+      43: 4300016
+    second: Sword1_L
+  - first:
+      43: 4300018
+    second: Hammer1_L
+  - first:
+      43: 4300020
+    second: Axe1_L
+  - first:
+      43: 4300022
+    second: Wand2_L
+  - first:
+      43: 4300024
+    second: Wand1_L
+  - first:
+      43: 4300026
+    second: Shield5
+  - first:
+      43: 4300028
+    second: Shield4
+  - first:
+      43: 4300030
+    second: Shield3
+  - first:
+      43: 4300032
+    second: Shield2
+  - first:
+      43: 4300034
+    second: Shield1
+  - first:
+      43: 4300036
+    second: Arrow1
+  - first:
+      43: 4300038
+    second: Arrow2
+  - first:
+      43: 4300040
+    second: Sword4_R
+  - first:
+      43: 4300042
+    second: Sword3_R
+  - first:
+      43: 4300044
+    second: Sword2_R
+  - first:
+      43: 4300046
+    second: Sword1_R
+  - first:
+      43: 4300048
+    second: Hammer1_R
+  - first:
+      43: 4300050
+    second: Axe1_R
+  - first:
+      43: 4300052
+    second: Wand2_R
+  - first:
+      43: 4300054
+    second: Wand1_R
+  - first:
+      43: 4300056
+    second: Face1
+  - first:
+      43: 4300058
+    second: Face2
+  - first:
+      43: 4300060
+    second: Face3
+  - first:
+      43: 4300062
+    second: Face4
+  - first:
+      43: 4300064
+    second: Cloth1
+  - first:
+      43: 4300066
+    second: Cloth2
+  - first:
+      43: 4300068
+    second: Cloth3
+  - first:
+      43: 4300070
+    second: Cloth4
+  - first:
+      43: 4300072
+    second: Cloth5
+  - first:
+      43: 4300074
+    second: Cloth6
+  - first:
+      43: 4300076
+    second: Cloth7
+  - first:
+      43: 4300078
+    second: Hair1
+  - first:
+      43: 4300080
+    second: Hair1Half
+  - first:
+      43: 4300082
+    second: Hair2
+  - first:
+      43: 4300084
+    second: Hair2Half
+  - first:
+      43: 4300086
+    second: Hair3
+  - first:
+      43: 4300088
+    second: Hair3Half
+  - first:
+      43: 4300090
+    second: Hair4
+  - first:
+      43: 4300092
+    second: Hair4Half
+  - first:
+      43: 4300094
+    second: Hair5
+  - first:
+      43: 4300096
+    second: Hair5Half
+  - first:
+      43: 4300098
+    second: Glove1
+  - first:
+      43: 4300100
+    second: Glove2
+  - first:
+      43: 4300102
+    second: Glove3
+  - first:
+      43: 4300104
+    second: Glove4
+  - first:
+      43: 4300106
+    second: Glove5
+  - first:
+      43: 4300108
+    second: Glove6
+  - first:
+      43: 4300110
+    second: Shoe1
+  - first:
+      43: 4300112
+    second: Shoe2
+  - first:
+      43: 4300114
+    second: Shoe3
+  - first:
+      43: 4300116
+    second: Shoe4
+  - first:
+      43: 4300118
+    second: Shoe5
+  - first:
+      43: 4300120
+    second: Shoe6
+  - first:
+      43: 4300122
+    second: ShoulderPad1
+  - first:
+      43: 4300124
+    second: ShoulderPad2
+  - first:
+      43: 4300126
+    second: ShoulderPad3
+  - first:
+      43: 4300128
+    second: ShoulderPad4
+  - first:
+      43: 4300130
+    second: ShoulderPad5
+  - first:
+      43: 4300132
+    second: ShoulderPad6
+  - first:
+      43: 4300134
+    second: Hat1
+  - first:
+      43: 4300136
+    second: Hat2
+  - first:
+      43: 4300138
+    second: Hat3
+  - first:
+      43: 4300140
+    second: Helm1
+  - first:
+      43: 4300142
+    second: Helm2
+  - first:
+      43: 4300144
+    second: Helm3
+  - first:
+      43: 4300146
+    second: Helm4
+  - first:
+      43: 4300148
+    second: Helm5
+  - first:
+      43: 4300150
+    second: Helm6
+  - first:
+      43: 4300152
+    second: Helm7
+  - first:
+      43: 4300154
+    second: Crown1
+  - first:
+      43: 4300156
+    second: Crown2
+  - first:
+      43: 4300158
+    second: Crown3
+  - first:
+      43: 4300160
+    second: Crown4
+  - first:
+      43: 4300162
+    second: Belt1
+  - first:
+      43: 4300164
+    second: Belt2
+  - first:
+      43: 4300166
+    second: Belt3
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: Belt1
+  - first:
+      137: 13700002
+    second: Belt2
+  - first:
+      137: 13700004
+    second: Belt3
+  - first:
+      137: 13700006
+    second: Cloth1
+  - first:
+      137: 13700008
+    second: Cloth2
+  - first:
+      137: 13700010
+    second: Cloth3
+  - first:
+      137: 13700012
+    second: Cloth4
+  - first:
+      137: 13700014
+    second: Cloth5
+  - first:
+      137: 13700016
+    second: Cloth6
+  - first:
+      137: 13700018
+    second: Cloth7
+  - first:
+      137: 13700020
+    second: Crown1
+  - first:
+      137: 13700022
+    second: Crown2
+  - first:
+      137: 13700024
+    second: Crown3
+  - first:
+      137: 13700026
+    second: Crown4
+  - first:
+      137: 13700028
+    second: Face1
+  - first:
+      137: 13700030
+    second: Face2
+  - first:
+      137: 13700032
+    second: Face3
+  - first:
+      137: 13700034
+    second: Face4
+  - first:
+      137: 13700036
+    second: Glove1
+  - first:
+      137: 13700038
+    second: Glove2
+  - first:
+      137: 13700040
+    second: Glove3
+  - first:
+      137: 13700042
+    second: Glove4
+  - first:
+      137: 13700044
+    second: Glove5
+  - first:
+      137: 13700046
+    second: Glove6
+  - first:
+      137: 13700048
+    second: Hair1
+  - first:
+      137: 13700050
+    second: Hair1Half
+  - first:
+      137: 13700052
+    second: Hair2
+  - first:
+      137: 13700054
+    second: Hair2Half
+  - first:
+      137: 13700056
+    second: Hair3
+  - first:
+      137: 13700058
+    second: Hair3Half
+  - first:
+      137: 13700060
+    second: Hair4
+  - first:
+      137: 13700062
+    second: Hair4Half
+  - first:
+      137: 13700064
+    second: Hair5
+  - first:
+      137: 13700066
+    second: Hair5Half
+  - first:
+      137: 13700068
+    second: Hat1
+  - first:
+      137: 13700070
+    second: Hat2
+  - first:
+      137: 13700072
+    second: Hat3
+  - first:
+      137: 13700074
+    second: Helm1
+  - first:
+      137: 13700076
+    second: Helm2
+  - first:
+      137: 13700078
+    second: Helm3
+  - first:
+      137: 13700080
+    second: Helm4
+  - first:
+      137: 13700082
+    second: Helm5
+  - first:
+      137: 13700084
+    second: Helm6
+  - first:
+      137: 13700086
+    second: Helm7
+  - first:
+      137: 13700088
+    second: Shoe1
+  - first:
+      137: 13700090
+    second: Shoe2
+  - first:
+      137: 13700092
+    second: Shoe3
+  - first:
+      137: 13700094
+    second: Shoe4
+  - first:
+      137: 13700096
+    second: Shoe5
+  - first:
+      137: 13700098
+    second: Shoe6
+  - first:
+      137: 13700100
+    second: ShoulderPad1
+  - first:
+      137: 13700102
+    second: ShoulderPad2
+  - first:
+      137: 13700104
+    second: ShoulderPad3
+  - first:
+      137: 13700106
+    second: ShoulderPad4
+  - first:
+      137: 13700108
+    second: ShoulderPad5
+  - first:
+      137: 13700110
+    second: ShoulderPad6
   externalObjects: {}
   materials:
-    importMaterials: 0
+    materialImportMode: 0
     materialName: 0
     materialSearch: 1
     materialLocation: 0
@@ -507,6 +1493,7 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
     rigImportErrors: 
     rigImportWarnings: 
@@ -531,25 +1518,36 @@ ModelImporter:
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
     importVisibility: 0
     importBlendShapes: 1
     importCameras: 0
     importLights: 0
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
     indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.01
-    hasPreviousCalculatedGlobalScale: 1
+    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -558,10 +1556,10 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 0
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human:
     - boneName: pelvis
       humanName: Hips
@@ -979,737 +1977,737 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: Belt1
       parentName: CharacterBaseMesh(Clone)
-      position: {x: 1.8991281e-21, y: 0.5524499, z: -0.5984893}
+      position: {x: 1.899128e-23, y: 0.005524498, z: -0.0059848926}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1.0547386, y: 1.0547386, z: 1.0547386}
     - name: Belt2
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 0.78111243, z: -0.7644882}
+      position: {x: -0, y: 0.0078111235, z: -0.007644882}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Belt3
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 0.8367335, z: -0.80464154}
+      position: {x: -0, y: 0.0083673345, z: -0.008046415}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Cloth1
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 0.69618183, z: -0.73595184}
+      position: {x: -0, y: 0.0069618183, z: -0.0073595177}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Cloth2
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 0.71124583, z: -0.7595946}
+      position: {x: -0, y: 0.0071124574, z: -0.0075959456}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Cloth3
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 0.7226376, z: -0.7593779}
+      position: {x: -0, y: 0.007226376, z: -0.007593779}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Cloth4
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 0.71528226, z: -0.8125941}
+      position: {x: -0, y: 0.0071528223, z: -0.008125941}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Cloth5
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 0.7291558, z: -0.7654564}
+      position: {x: -0, y: 0.007291557, z: -0.007654563}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Cloth6
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 0.7453856, z: -0.74718016}
+      position: {x: -0, y: 0.0074538556, z: -0.007471801}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Cloth7
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 0.73322994, z: -0.76182103}
+      position: {x: -0, y: 0.0073322994, z: -0.0076182093}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Crown1
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 1.6916713, z: -1.9197873}
+      position: {x: -0, y: 0.01691671, z: -0.019197872}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Crown2
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 1.8867145, z: -1.679801}
+      position: {x: -0, y: 0.018867144, z: -0.01679801}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Crown3
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 1.8158379, z: -1.7143073}
+      position: {x: -0, y: 0.018158376, z: -0.017143073}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Crown4
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 1.7657534, z: -1.7590497}
+      position: {x: -0, y: 0.017657531, z: -0.017590497}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Face1
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 1.3329262, z: -1.2842588}
+      position: {x: -0, y: 0.01332926, z: -0.012842588}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Face2
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 1.3329262, z: -1.2842588}
+      position: {x: -0, y: 0.01332926, z: -0.012842588}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Face3
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 1.3329262, z: -1.2842588}
+      position: {x: -0, y: 0.01332926, z: -0.012842588}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Face4
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 1.3329262, z: -1.2842588}
+      position: {x: -0, y: 0.01332926, z: -0.012842588}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Glove1
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 1.0350585, z: -1.0033522}
+      position: {x: -0, y: 0.010350583, z: -0.01003352}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Glove2
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 1.0329099, z: -1.0185599}
+      position: {x: -0, y: 0.0103290975, z: -0.010185597}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Glove3
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 1.0249789, z: -1.0289651}
+      position: {x: -0, y: 0.010249787, z: -0.0102896495}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Glove4
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 1.0157214, z: -1.0351479}
+      position: {x: -0, y: 0.010157213, z: -0.010351477}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Glove5
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 1.0695748, z: -1.0626901}
+      position: {x: -0, y: 0.010695748, z: -0.010626901}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Glove6
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 1.0295945, z: -1.0355734}
+      position: {x: -0, y: 0.010295945, z: -0.010355733}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Hair1
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 1.5420833, z: -1.45944}
+      position: {x: -0, y: 0.015420833, z: -0.014594399}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Hair1Half
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 1.40585, z: -1.3089056}
+      position: {x: -0, y: 0.014058499, z: -0.013089054}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Hair2
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 1.5127047, z: -1.4867319}
+      position: {x: -0, y: 0.015127046, z: -0.014867317}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Hair2Half
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 1.4259492, z: -1.3602622}
+      position: {x: -0, y: 0.01425949, z: -0.01360262}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Hair3
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 1.5100437, z: -1.4825826}
+      position: {x: -0, y: 0.015100436, z: -0.014825826}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Hair3Half
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 1.4309824, z: -1.3916554}
+      position: {x: -0, y: 0.0143098235, z: -0.013916553}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Hair4
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 1.5143735, z: -1.509721}
+      position: {x: -0, y: 0.0151437335, z: -0.01509721}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Hair4Half
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 1.4112757, z: -1.3602842}
+      position: {x: -0, y: 0.014112756, z: -0.013602841}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Hair5
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 1.5697376, z: -1.4468266}
+      position: {x: -0, y: 0.015697373, z: -0.014468264}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Hair5Half
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 1.4669603, z: -1.3747671}
+      position: {x: -0, y: 0.014669602, z: -0.013747669}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Hat1
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 1.524205, z: -1.4846934}
+      position: {x: -0, y: 0.0152420495, z: -0.014846934}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Hat2
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 1.6351556, z: -1.6006821}
+      position: {x: -0, y: 0.016351556, z: -0.01600682}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Hat3
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 1.5601127, z: -1.4881244}
+      position: {x: -0, y: 0.015601126, z: -0.014881242}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Helm1
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 1.5258405, z: -1.5107746}
+      position: {x: -0, y: 0.0152584035, z: -0.015107744}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Helm2
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 1.4355245, z: -1.6757432}
+      position: {x: -0, y: 0.014355243, z: -0.016757432}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Helm3
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 1.5902667, z: -1.5262005}
+      position: {x: -0, y: 0.015902665, z: -0.015262005}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Helm4
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 1.5286291, z: -1.321395}
+      position: {x: -0, y: 0.01528629, z: -0.013213949}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Helm5
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 1.4450008, z: -1.3739289}
+      position: {x: -0, y: 0.014450007, z: -0.013739289}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Helm6
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 1.4157319, z: -1.4442064}
+      position: {x: -0, y: 0.014157318, z: -0.014442063}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Helm7
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 1.4085413, z: -1.4200851}
+      position: {x: -0, y: 0.014085412, z: -0.014200849}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Shoe1
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 0.20047489, z: -0.12372654}
+      position: {x: -0, y: 0.0020047487, z: -0.0012372653}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Shoe2
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 0.20089757, z: -0.13606337}
+      position: {x: -0, y: 0.0020089755, z: -0.0013606336}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Shoe3
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 0.23195653, z: -0.14143208}
+      position: {x: -0, y: 0.002319565, z: -0.0014143208}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Shoe4
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 0.1929096, z: -0.13129182}
+      position: {x: -0, y: 0.001929096, z: -0.0013129181}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Shoe5
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 0.20851335, z: -0.15217216}
+      position: {x: -0, y: 0.0020851332, z: -0.0015217215}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Shoe6
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 0.22038794, z: -0.16272542}
+      position: {x: -0, y: 0.0022038794, z: -0.0016272542}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: ShoulderPad1
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 1.1295135, z: -1.1581235}
+      position: {x: -0, y: 0.011295133, z: -0.011581235}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: ShoulderPad2
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 1.1380737, z: -1.164109}
+      position: {x: -0, y: 0.011380737, z: -0.01164109}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: ShoulderPad3
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 1.1275653, z: -1.1538085}
+      position: {x: -0, y: 0.011275653, z: -0.011538084}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: ShoulderPad4
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 1.1473922, z: -1.1725993}
+      position: {x: -0, y: 0.01147392, z: -0.011725992}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: ShoulderPad5
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 1.2488393, z: -1.2752478}
+      position: {x: -0, y: 0.012488391, z: -0.012752478}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: ShoulderPad6
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 1.119695, z: -1.1464467}
+      position: {x: -0, y: 0.0111969495, z: -0.011464465}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: root
       parentName: CharacterBaseMesh(Clone)
-      position: {x: -0, y: 0, z: -0.05060407}
+      position: {x: -0, y: 0, z: -0.0005060407}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: pelvis
       parentName: root
-      position: {x: -3.0999767e-32, y: -0.028181527, z: 0.57749283}
+      position: {x: -3.0999763e-34, y: -0.00028181524, z: 0.005774928}
       rotation: {x: 0.08801344, y: 0.7016079, z: 0.08801344, w: 0.7016079}
       scale: {x: 1, y: 1, z: 1}
     - name: spine_01
       parentName: pelvis
-      position: {x: -0.12213885, y: 0.0015710504, z: 1.5622067e-17}
+      position: {x: -0.0012213883, y: 0.000015710502, z: 1.5622065e-19}
       rotation: {x: -5.1098166e-17, y: -1.6211398e-16, z: -0.05785565, w: 0.998325}
       scale: {x: 1, y: 1, z: 1}
     - name: spine_02
       parentName: spine_01
-      position: {x: -0.14500739, y: 0.012613418, z: 3.8834922e-17}
+      position: {x: -0.0014500738, y: 0.00012613418, z: 3.8834917e-19}
       rotation: {x: 1.7353463e-17, y: -9.794758e-19, z: -0.1185224, w: 0.9929514}
       scale: {x: 1, y: 1, z: 1}
     - name: spine_03
       parentName: spine_02
-      position: {x: -0.124961086, y: 0.003215244, z: 3.99823e-17}
+      position: {x: -0.0012496108, y: 0.00003215244, z: 3.99823e-19}
       rotation: {x: 6.9384797e-17, y: 1.7169768e-16, z: -0.04006483, w: 0.99919707}
       scale: {x: 1, y: 1, z: 1}
     - name: neck_01
       parentName: spine_03
-      position: {x: -0.20089038, y: -0.021196334, z: 6.607116e-17}
+      position: {x: -0.0020089035, y: -0.00021196333, z: 6.6071155e-19}
       rotation: {x: -3.8280632e-17, y: 5.2760554e-17, z: 0.18672618, w: 0.982412}
       scale: {x: 1, y: 1, z: 1}
     - name: head
       parentName: neck_01
-      position: {x: -0.19737928, y: 0.0017454086, z: 4.8954272e-17}
+      position: {x: -0.0019737927, y: 0.000017454086, z: 4.8954265e-19}
       rotation: {x: -2.1251933e-17, y: -2.2102525e-16, z: -0.095710196, w: 0.99540925}
       scale: {x: 1, y: 1, z: 1}
     - name: goggle
       parentName: head
-      position: {x: -0.10426342, y: 0.019702436, z: 9.781686e-17}
+      position: {x: -0.001042634, y: 0.00019702435, z: 9.781686e-19}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: clavicle_l
       parentName: spine_03
-      position: {x: -0.071298495, y: 0.0023772735, z: -0.094934195}
+      position: {x: -0.00071298494, y: 0.000023772733, z: -0.00094934186}
       rotation: {x: 0.017211089, y: -0.7295103, z: 0.10917408, w: 0.6749811}
       scale: {x: 1, y: 1, z: 1}
     - name: upperarm_l
       parentName: clavicle_l
-      position: {x: -0.1048779, y: -4.4408918e-17, z: 1.4210854e-16}
+      position: {x: -0.0010487789, y: -4.440892e-19, z: 1.4210854e-18}
       rotation: {x: 0.0024148629, y: 0.032408834, z: -0.062318433, w: 0.99752706}
       scale: {x: 1, y: 1, z: 1}
     - name: lowerarm_l
       parentName: upperarm_l
-      position: {x: -0.35835242, y: 0.020167653, z: 2.842171e-16}
+      position: {x: -0.0035835241, y: 0.0002016765, z: 2.8421709e-18}
       rotation: {x: -5.905942e-31, y: -5.407758e-29, z: -0.005354126, w: 0.9999857}
       scale: {x: 1, y: 1, z: 1}
     - name: hand_l
       parentName: lowerarm_l
-      position: {x: -0.23148166, y: -0.0058780536, z: -1.4210854e-16}
+      position: {x: -0.0023148165, y: -0.000058780533, z: -1.4210854e-18}
       rotation: {x: -0.705127, y: -0.014889667, z: -0.018252593, w: 0.70868975}
       scale: {x: 1, y: 1, z: 1}
     - name: thumb_01_l
       parentName: hand_l
-      position: {x: -0.059102654, y: 0.026275903, z: -0.08270726}
+      position: {x: -0.0005910265, y: 0.00026275901, z: -0.0008270726}
       rotation: {x: 0.5831124, y: -0.2901917, z: 0.24934235, w: 0.7166569}
       scale: {x: 1, y: 1, z: 1}
     - name: thumb_02_l
       parentName: thumb_01_l
-      position: {x: -0.07970302, y: -3.5527136e-17, z: 4.2632563e-16}
+      position: {x: -0.00079703017, y: -3.5527136e-19, z: 4.2632566e-18}
       rotation: {x: -0.028249286, y: -0.01615825, z: -0.033478223, w: 0.9989095}
       scale: {x: 1, y: 1, z: 1}
     - name: thumb_03_l
       parentName: thumb_02_l
-      position: {x: -0.064994484, y: -3.5527136e-17, z: 1.4210854e-16}
+      position: {x: -0.0006499448, y: -3.5527136e-19, z: 1.4210854e-18}
       rotation: {x: 0.023968818, y: -0.023600308, z: -0.025017621, w: 0.99912095}
       scale: {x: 1, y: 1, z: 1}
     - name: index_01_l
       parentName: hand_l
-      position: {x: -0.12851799, y: -0.01438421, z: -0.058676623}
+      position: {x: -0.0012851796, y: -0.0001438421, z: -0.0005867662}
       rotation: {x: 0.07719099, y: -0.010882099, z: -0.011317301, w: 0.9968927}
       scale: {x: 1, y: 1, z: 1}
     - name: index_02_l
       parentName: index_01_l
-      position: {x: -0.08106954, y: -0.0064408253, z: -0.0019819795}
+      position: {x: -0.00081069535, y: -0.000064408254, z: -0.000019819794}
       rotation: {x: 0.0012414171, y: -0.003930288, z: -0.062582195, w: 0.9980313}
       scale: {x: 1, y: 1, z: 1}
     - name: index_03_l
       parentName: index_02_l
-      position: {x: -0.06657951, y: -0.010166785, z: -0.0034639393}
+      position: {x: -0.00066579506, y: -0.000101667836, z: -0.000034639394}
       rotation: {x: 0.019108133, y: -0.021374207, z: 0.0004085892, w: 0.99958885}
       scale: {x: 1, y: 1, z: 1}
     - name: middle_01_l
       parentName: hand_l
-      position: {x: -0.1286768, y: -0.027611725, z: -0.008986833}
+      position: {x: -0.001286768, y: -0.00027611724, z: -0.000089868314}
       rotation: {x: 0.027062258, y: -0.012522278, z: 0.020173788, w: 0.99935174}
       scale: {x: 1, y: 1, z: 1}
     - name: middle_02_l
       parentName: middle_01_l
-      position: {x: -0.08329835, y: -0.0019648103, z: 0.0007372274}
+      position: {x: -0.0008329834, y: -0.0000196481, z: 0.0000073722736}
       rotation: {x: 0.018031022, y: -0.0021547193, z: -0.06262624, w: 0.9978719}
       scale: {x: 1, y: 1, z: 1}
     - name: middle_03_l
       parentName: middle_02_l
-      position: {x: -0.07866352, y: -0.014501577, z: -0.00086684374}
+      position: {x: -0.0007866351, y: -0.00014501574, z: -0.000008668437}
       rotation: {x: 0, y: -0.0062976107, z: -0, w: 0.9999802}
       scale: {x: 1, y: 1, z: 1}
     - name: ring_01_l
       parentName: hand_l
-      position: {x: -0.12710693, y: -0.029330483, z: 0.03857797}
+      position: {x: -0.0012710692, y: -0.00029330482, z: 0.00038577968}
       rotation: {x: -0.0023211231, y: -0.015927827, z: -0.0074974643, w: 0.9998424}
       scale: {x: 1, y: 1, z: 1}
     - name: ring_02_l
       parentName: ring_01_l
-      position: {x: -0.08391934, y: -0.0060671065, z: 0.00010260604}
+      position: {x: -0.0008391933, y: -0.00006067106, z: 0.0000010260604}
       rotation: {x: 0.01603073, y: 0.012626703, z: -0.06238623, w: 0.9978435}
       scale: {x: 1, y: 1, z: 1}
     - name: ring_03_l
       parentName: ring_02_l
-      position: {x: -0.07046852, y: -0.011599205, z: -0.0031857304}
+      position: {x: -0.0007046851, y: -0.00011599204, z: -0.000031857304}
       rotation: {x: 0, y: -0.00971795, z: -0, w: 0.9999528}
       scale: {x: 1, y: 1, z: 1}
     - name: pinky_01_l
       parentName: hand_l
-      position: {x: -0.12714024, y: -0.020847507, z: 0.07892959}
+      position: {x: -0.0012714022, y: -0.00020847506, z: 0.00078929577}
       rotation: {x: -0.052153897, y: -0.013922911, z: -0.026357552, w: 0.9981941}
       scale: {x: 1, y: 1, z: 1}
     - name: pinky_02_l
       parentName: pinky_01_l
-      position: {x: -0.08108732, y: -0.009177471, z: 0.000343635}
+      position: {x: -0.0008108731, y: -0.0000917747, z: 0.00000343635}
       rotation: {x: 0.018037261, y: 0.015110151, z: -0.050951336, w: 0.998424}
       scale: {x: 1, y: 1, z: 1}
     - name: pinky_03_l
       parentName: pinky_02_l
-      position: {x: -0.061373543, y: -0.008336294, z: -0.0023520172}
+      position: {x: -0.0006137354, y: -0.000083362946, z: -0.000023520171}
       rotation: {x: 0, y: -0.00971795, z: -0, w: 0.9999528}
       scale: {x: 1, y: 1, z: 1}
     - name: shoulderPad_l
       parentName: clavicle_l
-      position: {x: -0.17600696, y: 0.023320874, z: 0.14720303}
+      position: {x: -0.0017600695, y: 0.00023320872, z: 0.0014720303}
       rotation: {x: 0.0022206402, y: 0.032422718, z: -0.068294086, w: 0.99713576}
       scale: {x: 1, y: 1, z: 1}
     - name: clavicle_r
       parentName: spine_03
-      position: {x: -0.071302906, y: 0.0023764498, z: 0.094934195}
+      position: {x: -0.00071302895, y: 0.000023764494, z: 0.00094934186}
       rotation: {x: 0.7295103, y: 0.017211089, z: 0.6749811, w: -0.10917408}
       scale: {x: 1, y: 1, z: 1}
     - name: upperarm_r
       parentName: clavicle_r
-      position: {x: 0.10487765, y: 0.000000035551047, z: 0.00000045389456}
+      position: {x: 0.0010487764, y: 3.5551045e-10, z: 0.000000004538945}
       rotation: {x: 0.0024148703, y: 0.03240883, z: -0.062318433, w: 0.99752706}
       scale: {x: 1, y: 1, z: 1}
     - name: lowerarm_r
       parentName: upperarm_r
-      position: {x: 0.35835308, y: -0.020167615, z: 1.563194e-15}
+      position: {x: 0.0035835307, y: -0.00020167614, z: 1.5631938e-17}
       rotation: {x: 0.000000012904599, y: -6.909384e-11, z: -0.005354126, w: 0.9999857}
       scale: {x: 1, y: 1, z: 1}
     - name: hand_r
       parentName: lowerarm_r
-      position: {x: 0.23148169, y: 0.005877987, z: -1.5170883e-10}
+      position: {x: 0.0023148167, y: 0.000058779868, z: -1.5170882e-12}
       rotation: {x: -0.7051274, y: -0.014880303, z: -0.018243238, w: 0.70868975}
       scale: {x: 1, y: 1, z: 1}
     - name: thumb_01_r
       parentName: hand_r
-      position: {x: 0.059102453, y: -0.026276376, z: 0.08270726}
+      position: {x: 0.00059102447, y: -0.00026276373, z: 0.0008270726}
       rotation: {x: 0.5831066, y: -0.2901861, z: 0.24934983, w: 0.71666133}
       scale: {x: 1, y: 1, z: 1}
     - name: thumb_02_r
       parentName: thumb_01_r
-      position: {x: 0.07970437, y: -0.0000002787339, z: 0.0000032313005}
+      position: {x: 0.00079704355, y: -0.0000000027873386, z: 0.000000032313004}
       rotation: {x: -0.028251432, y: -0.01616932, z: -0.033480905, w: 0.9989092}
       scale: {x: 1, y: 1, z: 1}
     - name: thumb_03_r
       parentName: thumb_02_r
-      position: {x: 0.064993754, y: -0.00000023580661, z: 0.000000910039}
+      position: {x: 0.0006499374, y: -0.000000002358066, z: 0.000000009100388}
       rotation: {x: 0.023968818, y: -0.023600308, z: -0.025017621, w: 0.99912095}
       scale: {x: 1, y: 1, z: 1}
     - name: index_01_r
       parentName: hand_r
-      position: {x: 0.1285176, y: 0.014380149, z: 0.058676638}
+      position: {x: 0.0012851759, y: 0.00014380149, z: 0.00058676634}
       rotation: {x: 0.07719059, y: -0.010882074, z: -0.011309206, w: 0.99689287}
       scale: {x: 1, y: 1, z: 1}
     - name: index_02_r
       parentName: index_01_r
-      position: {x: 0.08107022, y: 0.006437425, z: 0.0019825385}
+      position: {x: 0.0008107021, y: 0.00006437425, z: 0.000019825384}
       rotation: {x: 0.0012414171, y: -0.003930288, z: -0.062582195, w: 0.9980313}
       scale: {x: 1, y: 1, z: 1}
     - name: index_03_r
       parentName: index_02_r
-      position: {x: 0.06657965, y: 0.010168093, z: 0.0034637707}
+      position: {x: 0.00066579645, y: 0.00010168092, z: 0.00003463771}
       rotation: {x: 0.019108133, y: -0.021374207, z: 0.0004085892, w: 0.99958885}
       scale: {x: 1, y: 1, z: 1}
     - name: middle_01_r
       parentName: hand_r
-      position: {x: 0.12867674, y: 0.027608233, z: 0.00898686}
+      position: {x: 0.0012867672, y: 0.0002760823, z: 0.00008986858}
       rotation: {x: 0.02706205, y: -0.012521067, z: 0.020157922, w: 0.9993521}
       scale: {x: 1, y: 1, z: 1}
     - name: middle_02_r
       parentName: middle_01_r
-      position: {x: 0.08329754, y: 0.001964982, z: -0.00073727674}
+      position: {x: 0.0008329753, y: 0.000019649819, z: -0.000007372766}
       rotation: {x: 0.018031022, y: -0.0021547193, z: -0.06262624, w: 0.9978719}
       scale: {x: 1, y: 1, z: 1}
     - name: middle_03_r
       parentName: middle_02_r
-      position: {x: 0.0786602, y: 0.01450111, z: 0.0008666971}
+      position: {x: 0.000786602, y: 0.00014501109, z: 0.000008666971}
       rotation: {x: 0, y: -0.0062976107, z: -0, w: 0.9999802}
       scale: {x: 1, y: 1, z: 1}
     - name: ring_01_r
       parentName: hand_r
-      position: {x: 0.12710658, y: 0.029328601, z: -0.03857795}
+      position: {x: 0.0012710656, y: 0.000293286, z: -0.00038577948}
       rotation: {x: -0.0023221965, y: -0.015929163, z: -0.007487028, w: 0.99984246}
       scale: {x: 1, y: 1, z: 1}
     - name: ring_02_r
       parentName: ring_01_r
-      position: {x: 0.083920054, y: 0.006063441, z: -0.000102563245}
+      position: {x: 0.00083920045, y: 0.000060634407, z: -0.0000010256324}
       rotation: {x: 0.01603073, y: 0.012626703, z: -0.06238623, w: 0.9978435}
       scale: {x: 1, y: 1, z: 1}
     - name: ring_03_r
       parentName: ring_02_r
-      position: {x: 0.07046881, y: 0.011596207, z: 0.0031857463}
+      position: {x: 0.000704688, y: 0.00011596205, z: 0.00003185746}
       rotation: {x: 0, y: -0.00971795, z: -0, w: 0.9999528}
       scale: {x: 1, y: 1, z: 1}
     - name: pinky_01_r
       parentName: hand_r
-      position: {x: 0.12713939, y: 0.020840934, z: -0.07892956}
+      position: {x: 0.0012713938, y: 0.00020840931, z: -0.0007892955}
       rotation: {x: -0.052153397, y: -0.013909302, z: -0.026411617, w: 0.99819285}
       scale: {x: 1, y: 1, z: 1}
     - name: pinky_02_r
       parentName: pinky_01_r
-      position: {x: 0.08108632, y: 0.009184342, z: -0.000342857}
+      position: {x: 0.00081086316, y: 0.00009184341, z: -0.0000034285697}
       rotation: {x: 0.0180352, y: 0.015116982, z: -0.05090183, w: 0.9984264}
       scale: {x: 1, y: 1, z: 1}
     - name: pinky_03_r
       parentName: pinky_02_r
-      position: {x: 0.0613775, y: 0.00833596, z: 0.0023520985}
+      position: {x: 0.00061377493, y: 0.0000833596, z: 0.000023520983}
       rotation: {x: 0.000000010536215, y: -0.00971795, z: 1.0239524e-10, w: 0.9999528}
       scale: {x: 1, y: 1, z: 1}
     - name: shoulderPad_r
       parentName: clavicle_r
-      position: {x: 0.17600757, y: -0.023321006, z: -0.14719468}
+      position: {x: 0.0017600757, y: -0.00023321006, z: -0.0014719468}
       rotation: {x: 0.9971358, y: -0.06829407, z: -0.03242272, w: -0.0022206397}
       scale: {x: 1, y: 1, z: 1}
     - name: backpackShield01
       parentName: spine_03
-      position: {x: 0.05879154, y: 0.29811797, z: 2.6863994e-16}
+      position: {x: 0.0005879154, y: 0.0029811796, z: 2.6863993e-18}
       rotation: {x: 0.06494219, y: -0.70411825, z: 0.06494219, w: 0.70411825}
       scale: {x: 1, y: 1, z: 1}
     - name: backpackShield02
       parentName: backpackShield01
-      position: {x: 1.635419e-16, y: 0.19255169, z: 0.020971233}
+      position: {x: 1.635419e-18, y: 0.0019255165, z: 0.00020971232}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: BackPack1
       parentName: backpackShield02
-      position: {x: -0.0023877143, y: -0.12723917, z: -0.00027493332}
+      position: {x: -0.000023877143, y: -0.0012723916, z: -0.0000027493331}
       rotation: {x: 1.3877788e-17, y: -1.0633995e-16, z: -4.3495542e-16, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: BackPack2
       parentName: backpackShield02
-      position: {x: 0.00035293578, y: -0.11790511, z: -0.005270256}
+      position: {x: 0.0000035293576, y: -0.001179051, z: -0.000052702555}
       rotation: {x: 1.3877788e-17, y: -1.0633995e-16, z: -4.3495542e-16, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Backpack3
       parentName: backpackShield02
-      position: {x: -2.6408e-16, y: -0.1307054, z: 0.023375724}
+      position: {x: -2.6407995e-18, y: -0.001307054, z: 0.00023375721}
       rotation: {x: 1.3877788e-17, y: -1.0633995e-16, z: -4.3495542e-16, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: weaponPosition_l
       parentName: backpackShield01
-      position: {x: -0.2877785, y: 0.009525661, z: 0.02205377}
+      position: {x: -0.002877785, y: 0.000095256604, z: 0.00022053768}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: weaponPosition_r
       parentName: backpackShield01
-      position: {x: 0.287779, y: 0.009525931, z: 0.022054225}
+      position: {x: 0.0028777898, y: 0.00009525931, z: 0.00022054225}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: weaponPositionTop
       parentName: backpackShield01
-      position: {x: -9.711231e-17, y: -0.026338715, z: 0.3967954}
+      position: {x: -9.71123e-19, y: -0.00026338713, z: 0.0039679534}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: thigh_l
       parentName: pelvis
-      position: {x: 0.03330361, y: 0.00012129387, z: -0.124018505}
+      position: {x: 0.0003330361, y: 0.0000012129386, z: -0.001240185}
       rotation: {x: 0.058019154, y: 0.033847246, z: -0.13209622, w: 0.9889584}
       scale: {x: 1, y: 1, z: 1}
     - name: calf_l
       parentName: thigh_l
-      position: {x: 0.2615162, y: -0.00004654807, z: -0.003230172}
+      position: {x: 0.0026151622, y: -0.0000004654807, z: -0.00003230172}
       rotation: {x: -0.009955104, y: -0.002821651, z: 0.010788465, w: 0.9998883}
       scale: {x: 1, y: 1, z: 1}
     - name: foot_l
       parentName: calf_l
-      position: {x: 0.2484259, y: 0.022103611, z: -0.0069593876}
+      position: {x: 0.002484259, y: 0.00022103611, z: -0.000069593865}
       rotation: {x: -0.048031498, y: -0.034866802, z: -0.0037838009, w: 0.9982299}
       scale: {x: 1, y: 1, z: 1}
     - name: ball_l
       parentName: foot_l
-      position: {x: 0.00971081, y: -0.20057398, z: -0.015015676}
+      position: {x: 0.00009710809, y: -0.0020057396, z: -0.00015015676}
       rotation: {x: 0.0030611525, y: -0.008212709, z: 0.7100026, w: 0.70414454}
       scale: {x: 1, y: 1, z: 1}
     - name: thigh_r
       parentName: pelvis
-      position: {x: 0.033303764, y: 0.000121258076, z: 0.124019}
+      position: {x: 0.0003330376, y: 0.0000012125807, z: 0.0012401899}
       rotation: {x: -0.033845175, y: 0.058045585, z: 0.98895675, w: 0.13209751}
       scale: {x: 1, y: 1, z: 1}
     - name: calf_r
       parentName: thigh_r
-      position: {x: -0.26151615, y: 0.00004652248, z: 0.003229354}
+      position: {x: -0.0026151612, y: 0.0000004652248, z: 0.000032293538}
       rotation: {x: -0.009955104, y: -0.002821651, z: 0.010788465, w: 0.9998883}
       scale: {x: 1, y: 1, z: 1}
     - name: foot_r
       parentName: calf_r
-      position: {x: -0.24842583, y: -0.022103617, z: 0.006960128}
+      position: {x: -0.0024842578, y: -0.00022103614, z: 0.00006960128}
       rotation: {x: -0.048058007, y: -0.03486779, z: -0.0037823087, w: 0.9982286}
       scale: {x: 1, y: 1, z: 1}
     - name: ball_r
       parentName: foot_r
-      position: {x: -0.009710754, y: 0.20057446, z: 0.015014973}
+      position: {x: -0.00009710754, y: 0.0020057445, z: 0.00015014973}
       rotation: {x: 0.0030611525, y: -0.008212709, z: 0.7100026, w: 0.70414454}
       scale: {x: 1, y: 1, z: 1}
     - name: weaponShield_l
       parentName: root
-      position: {x: -0.95630467, y: -0.023688449, z: 0.99997425}
+      position: {x: -0.0095630465, y: -0.00023688446, z: 0.009999742}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Axe1_L
       parentName: weaponShield_l
-      position: {x: 0.04779346, y: 0.040437866, z: 0.006241695}
+      position: {x: 0.00047793458, y: 0.0004043786, z: 0.00006241694}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Bow1
       parentName: weaponShield_l
-      position: {x: 0.2022484, y: -0.008777852, z: 0.0067226687}
+      position: {x: 0.0020224839, y: -0.00008777852, z: 0.00006722668}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Bow2
       parentName: weaponShield_l
-      position: {x: -0.24858005, y: -0.0071552824, z: 0.0025561317}
+      position: {x: -0.0024858, y: -0.000071552815, z: 0.000025561316}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Hammer1_L
       parentName: weaponShield_l
-      position: {x: 0.114360675, y: -0.34356537, z: 0.003306045}
+      position: {x: 0.0011436067, y: -0.0034356534, z: 0.00003306045}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Shield1
       parentName: weaponShield_l
-      position: {x: 0.027204797, y: -0.0058690524, z: 0.0695099}
+      position: {x: 0.0002720479, y: -0.000058690523, z: 0.00069509895}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Shield2
       parentName: weaponShield_l
-      position: {x: 0.024243612, y: -0.0034347326, z: 0.06300563}
+      position: {x: 0.0002424361, y: -0.00003434732, z: 0.0006300563}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Shield3
       parentName: weaponShield_l
-      position: {x: 0.027720513, y: -0.008396585, z: 0.061612587}
+      position: {x: 0.0002772051, y: -0.00008396583, z: 0.0006161259}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Shield4
       parentName: weaponShield_l
-      position: {x: 0.2264035, y: 0.066103615, z: 0.1801901}
+      position: {x: 0.002264035, y: 0.0006610361, z: 0.0018019008}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Shield5
       parentName: weaponShield_l
-      position: {x: 0.03240234, y: -0.004559923, z: 0.061273575}
+      position: {x: 0.00032402336, y: -0.000045599223, z: 0.00061273563}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Sword1_L
       parentName: weaponShield_l
-      position: {x: 0.048735652, y: -0.019857664, z: 0.0018333732}
+      position: {x: 0.0004873565, y: -0.00019857661, z: 0.000018333732}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Sword2_L
       parentName: weaponShield_l
-      position: {x: 0.047925033, y: -0.013838092, z: 0.0012915386}
+      position: {x: 0.00047925027, y: -0.00013838091, z: 0.000012915384}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Sword3_L
       parentName: weaponShield_l
-      position: {x: 0.048337985, y: 0.010063508, z: 0.0039506345}
+      position: {x: 0.0004833798, y: 0.00010063507, z: 0.000039506343}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Sword4_L
       parentName: weaponShield_l
-      position: {x: 0.050237935, y: -0.691841, z: 0.002117715}
+      position: {x: 0.0005023793, y: -0.00691841, z: 0.000021177148}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Wand1_L
       parentName: weaponShield_l
-      position: {x: 0.04833614, y: 0.15823314, z: 0.00604104}
+      position: {x: 0.0004833614, y: 0.0015823314, z: 0.000060410395}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Wand2_L
       parentName: weaponShield_l
-      position: {x: 0.045001917, y: -0.3645273, z: 0.0065224282}
+      position: {x: 0.00045001914, y: -0.0036452727, z: 0.00006522428}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: weaponShield_r
       parentName: root
-      position: {x: 0.95630497, y: -0.023688473, z: 0.99997395}
+      position: {x: 0.009563049, y: -0.00023688472, z: 0.009999738}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Arrow1
       parentName: weaponShield_r
-      position: {x: -0.10049677, y: -0.040947996, z: 0.024366505}
+      position: {x: -0.0010049676, y: -0.00040947995, z: 0.00024366502}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Arrow2
       parentName: weaponShield_r
-      position: {x: 0.50246066, y: -0.040514484, z: 0.023017777}
+      position: {x: 0.0050246064, y: -0.0004051448, z: 0.00023017777}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Axe1_R
       parentName: weaponShield_r
-      position: {x: -0.047793765, y: 0.04043789, z: 0.0062419903}
+      position: {x: -0.00047793763, y: 0.00040437884, z: 0.000062419895}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Hammer1_R
       parentName: weaponShield_r
-      position: {x: -0.11436098, y: -0.34356532, z: 0.00330634}
+      position: {x: -0.0011436096, y: -0.0034356527, z: 0.000033063396}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Sword1_R
       parentName: weaponShield_r
-      position: {x: -0.048735958, y: -0.019857641, z: 0.0018336683}
+      position: {x: -0.00048735956, y: -0.0001985764, z: 0.000018336683}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Sword2_R
       parentName: weaponShield_r
-      position: {x: -0.04792534, y: -0.0138380695, z: 0.0012918336}
+      position: {x: -0.00047925336, y: -0.0001383807, z: 0.0000129183345}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Sword3_R
       parentName: weaponShield_r
-      position: {x: -0.048338283, y: 0.01006353, z: 0.0039509297}
+      position: {x: -0.0004833828, y: 0.00010063529, z: 0.000039509297}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Sword4_R
       parentName: weaponShield_r
-      position: {x: -0.05023824, y: -0.69184095, z: 0.00211801}
+      position: {x: -0.00050238235, y: -0.006918409, z: 0.0000211801}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Wand1_R
       parentName: weaponShield_r
-      position: {x: -0.048336443, y: 0.15823317, z: 0.0060413354}
+      position: {x: -0.0004833644, y: 0.0015823316, z: 0.000060413353}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Wand2_R
       parentName: weaponShield_r
-      position: {x: -0.045002215, y: -0.3645273, z: 0.0065227235}
+      position: {x: -0.0004500221, y: -0.0036452727, z: 0.000065227236}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5
@@ -1719,13 +2717,19 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 0.01
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 3
   humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  importBlendShapeDeformPercent: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

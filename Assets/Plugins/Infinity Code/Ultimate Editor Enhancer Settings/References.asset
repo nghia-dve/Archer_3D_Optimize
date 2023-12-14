@@ -390,5 +390,41 @@ MonoBehaviour:
     alignWindowToBar: 1
     windowMode: 0
   _sceneHistory:
-  - name: SampleScene
-    path: Assets/Scenes/SampleScene.unity
+  - name: Castle
+    path: Assets/Tessera/Sample/Castle/Castle.unity
+  - name: Truchet Multipass
+    path: Assets/Tessera/Sample/Truchet/Truchet Multipass.unity
+  - name: Truchet Big
+    path: Assets/Tessera/Sample/Truchet/Truchet Big.unity
+  - name: TriangleSphere
+    path: Assets/Tessera/Sample/Triangles/TriangleSphere.unity
+  - name: Triangles
+    path: Assets/Tessera/Sample/Triangles/Triangles.unity
+  - name: Platformer
+    path: Assets/Tessera/Sample/Platformer/Platformer.unity
+  - name: PlatformerInfinite
+    path: Assets/Tessera/Sample/Platformer/PlatformerInfinite.unity
+  - name: Skyscrapers
+    path: Assets/Tessera/Sample/Skyscrapers/Skyscrapers.unity
+  - name: HexRaceway
+    path: Assets/Tessera/Sample/HexRaceway/HexRaceway.unity
+  - name: Hexes
+    path: Assets/Tessera/Sample/Hexes/Hexes.unity
+  - name: GrassPaths
+    path: Assets/Tessera/Sample/GrassPaths/GrassPaths.unity
+  - name: Plains
+    path: Assets/Tessera/Sample/Plains/Plains.unity
+  - name: GrassPlanet
+    path: Assets/Tessera/Sample/GrassPaths/GrassPlanet.unity
+  - name: GrassPathsWithPins
+    path: Assets/Tessera/Sample/GrassPaths/GrassPathsWithPins.unity
+  - name: GrassPathsWithPathConstraint
+    path: Assets/Tessera/Sample/GrassPaths/GrassPathsWithPathConstraint.unity
+  - name: GrassPathsWithMirror
+    path: Assets/Tessera/Sample/GrassPaths/GrassPathsWithMirror.unity
+  - name: GrassPathsMultipass
+    path: Assets/Tessera/Sample/GrassPaths/GrassPathsMultipass.unity
+  - name: GrassPathsInfinite
+    path: Assets/Tessera/Sample/GrassPaths/GrassPathsInfinite.unity
+  - name: GrassPaths3d
+    path: Assets/Tessera/Sample/GrassPaths/GrassPaths3d.unity
